@@ -1,5 +1,3 @@
-
-
 ---
 name: User Story
 about: Default user story template.
@@ -9,10 +7,10 @@ assignees: ''
 
 ---
 
-As a **role** I can **capability** so that **received benefit**.
+_As a_ **role**, _I can_ **capability** _so that_ **received_benefit**.
 
 ## Acceptance Criteria
 
-- Acceptance_Criteria_1
-- Acceptance_Criteria_2
-- Acceptance_Criteria_3
+- Acceptance_Citeria_1
+- Acceptance_Citeria_2
+- Acceptance_Citeria_3
