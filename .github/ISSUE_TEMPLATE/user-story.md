@@ -1,10 +1,10 @@
 
 ---
-Name: User Story
-About: Default user story template.
-Title: 'User Story: PLACEHOLDER_TITLE'
-Labels: ''
-Assignees: ''
+name: User Story
+about: Default user story template.
+title: 'User Story: PLACEHOLDER_TITLE'
+labels: ''
+assignees: ''
 
 ---
 
