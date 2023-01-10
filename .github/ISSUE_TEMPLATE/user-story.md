@@ -1,9 +1,9 @@
 ---
-Name: User Story
-About: Default user story template.
-Title: 'User Story: <TITLE>'
-Labels: ''
-Assignees: ''
+name: User Story
+about: This is default user story template.
+title: 'USER STORY: <TITLE>'
+labels: ''
+assignees: ''
 
 ---
 
