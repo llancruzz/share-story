@@ -1,13 +1,13 @@
 ---
 Name: User Story
 About: Default user story template.
-Title: 'User Story: PLACEHOLDER_TITLE'
+Title: 'User Story: <TITLE>'
 Labels: ''
 Assignees: ''
 
 ---
 
-As a **role**, I can **capability** so that **received_benefit**.
+As a **role**, I can **capability** so that **received benefit**.
 
 ## Acceptance Criteria
 
