@@ -1,7 +1,7 @@
 ---
-name: 'Developer Task: <TASK>'
+name: Developer Task
 about: Task or chore usually related to package, dependency or framework.
-title: DEVELOPER TASK
+title: 'DEVELOPER TASK: <TITLE>'
 labels: ''
 assignees: ''
 
