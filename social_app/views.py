@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_list_or_404
+from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from .models import Post
 
@@ -31,4 +31,4 @@ class PostDetail(View):
                 "liked": liked
             },
         )
-        
+
