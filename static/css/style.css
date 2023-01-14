@@ -97,7 +97,8 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color:#F9FAFC;
+    background-color: #23BBBB;
 }
 
 .post-title {
@@ -149,3 +150,11 @@ body {
     background-color: #445261;
 }
 
+.fonth h1 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2.6em;  
+}
+
+.share-btn {
+    background-color: #23BBBB;
+}
