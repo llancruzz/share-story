@@ -3,6 +3,7 @@
 body {
     background-color: #F9FAFC;
     font-family: 'Jost', sans-serif;
+    font-size: larger;
 }
 
 .brand {
@@ -143,3 +144,8 @@ body {
     background: transparent;
     border: none;
 }
+
+.navbar {
+    background-color: #445261;
+}
+
