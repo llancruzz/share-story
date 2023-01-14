@@ -95,7 +95,9 @@ body {
     color: #445261;
 }
 
-.post-link:hover,
+.post-link:hover {
+    color:#23BBBB;
+}
 .page-link {
     color:#F9FAFC;
     background-color: #23BBBB;
@@ -157,4 +159,6 @@ body {
 
 .share-btn {
     background-color: #23BBBB;
+    border-color: #23BBBB;
 }
+
