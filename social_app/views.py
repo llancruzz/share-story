@@ -14,6 +14,11 @@ class PostList(generic.ListView):
     paginate_by = 3
 
 
+def about(request):
+
+    return render(request, 'about.html')
+
+
 class PostDetail(View):
 
     def get(self, request, slug, *args, **kwargs):
@@ -77,8 +82,3 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
-
-
-def about(request):
-
-    return render(request, 'about.html')
