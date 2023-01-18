@@ -98,7 +98,9 @@
                         </div>
                     </form>
                     <button id="edit-comment-button" type="button" class="btn btn-warning btn-lg">Edit</button>
-                    <button type="submit" class="btn btn-danger btn-lg">Delete</button>
+                    <a href="{% url 'delete_comment' comment.id %}">
+                        <button type="submit" class="btn btn-danger btn-lg">Delete</button>
+                    </a>
                     {% endif %}
                 </div>
                 <!-- Our for loop ends here -->
