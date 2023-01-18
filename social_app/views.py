@@ -31,7 +31,8 @@ class PostDetail(View):
 
         commented = False
         if self.request.user:
-            commented = bool(post.comments.filter(approved=False, name=self.request.user.username).all())
+            commented = bool(post.comments.filter(
+                approved=False, name=self.request.user.username).all())
 
         return render(
             request,
@@ -86,7 +87,7 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
-        
+
 
 class CommentView(View):
 

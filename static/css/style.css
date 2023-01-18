@@ -202,3 +202,9 @@ body {
 .btn-toggler {
     background-color:#23BBBB;
 }
+
+.btn-save {
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+}
+
