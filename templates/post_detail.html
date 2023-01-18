@@ -91,15 +91,14 @@
                     {% if user.is_authenticated and user.username == comment.name %}
                     <form method="POST" action="/comment/{{comment.id}}">
                         {% csrf_token %}
-                        <input type="hidden" name="post_id" value="{{post.slug}}" />
-                        <div class="form-floating">
+                        <input type="hidden" name="post_id" value="{{post.slug}}" />        
+                        <div class="form-floating" id="hide-text-area">
                             <textarea name="body" class="form-control">{{comment.body}}</textarea>
                             <button type="submit" class="btn btn-signup btn-sm btn-save">SAVE</button>
                         </div>
                     </form>
-
-                    <button type="button" class="btn btn-warning btn-lg">Edit</button>
-                    <button type="button" class="btn btn-danger btn-lg">Delete</button>
+                    <button id="edit-comment-button" type="button" class="btn btn-warning btn-lg">Edit</button>
+                    <button type="submit" class="btn btn-danger btn-lg">Delete</button>
                     {% endif %}
                 </div>
                 <!-- Our for loop ends here -->
@@ -130,5 +129,5 @@
         </div>
     </div>
 </div>
-
+<script src="../static/js/scripts.js"></script>
 {% endblock content %}

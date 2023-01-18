@@ -208,3 +208,6 @@ body {
     margin-bottom: 0.5em;
 }
 
+#hide-text-area{
+    display: none;
+}
