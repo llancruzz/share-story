@@ -87,6 +87,18 @@
                     </p>
                     <!-- The body of the comment goes before the | -->
                     {{ comment.body | linebreaks }}
+
+                    {% if user.is_authenticated and user.username == comment.name %}
+                    <form method="POST" action="/comment/{{comment.id}}">
+                        <input type="hidden" name="post_id" value="{{post.slug}}" />
+                        <textarea name="body">{{comment.body}}</textarea>
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-signup btn-lg">Save</button>
+                    </form>
+
+                    <button>Edit</button>
+                    <button>Delete</button>
+                    {% endif %}
                 </div>
                 <!-- Our for loop ends here -->
                 {% endfor %}

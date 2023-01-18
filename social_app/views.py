@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import Post
+from .models import Post, Comment
 from .forms import CommentForm
 
 
@@ -29,13 +29,17 @@ class PostDetail(View):
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
 
+        commented = False
+        if self.request.user:
+            commented = bool(post.comments.filter(approved=False, name=self.request.user.username).all())
+
         return render(
             request,
             "post_detail.html",
             {
                 "post": post,
                 "comments": comments,
-                "commented": False,
+                "commented": commented,
                 "liked": liked,
                 "comment_form": CommentForm()
             },
@@ -82,3 +86,21 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+        
+
+class CommentView(View):
+
+    def post(self, request, id):
+        post_slug = request.POST.get("post_id")
+        post = get_object_or_404(Post, slug=post_slug)
+
+        comment = get_object_or_404(Comment, id=id)
+        comment.body = request.POST.get("body")
+        comment.approved = False
+        comment.save()
+
+        return HttpResponseRedirect(reverse('post_detail', args=[post_slug]))
+
+    def delete(self, request, id):
+        # Add delete functionality
+        ...
