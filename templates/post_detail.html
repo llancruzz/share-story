@@ -1,4 +1,4 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
 {% load static %}
 {% block content %}
 
@@ -16,7 +16,8 @@
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="https://media.istockphoto.com/id/856682036/photo/share-your-story.jpg?s=612x612&w=0&k=20&c=6Z4qLO41G4OfT8OdR6lsoeUzfA3vweHB-kcGZVkM8Lw=" width="100%">
+                <img src="https://media.istockphoto.com/id/856682036/photo/share-your-story.jpg?s=612x612&w=0&k=20&c=6Z4qLO41G4OfT8OdR6lsoeUzfA3vweHB-kcGZVkM8Lw="
+                    width="100%">
                 {% else %}
                 <img src=" {{ post.featured_image.url }}" width="100%">
                 {% endif %}
@@ -42,9 +43,11 @@
                             <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
                                 {% csrf_token %}
                                 {% if liked %}
-                                <button type="submit" name="social_apppost_id" value="{{post.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
+                                <button type="submit" name="social_apppost_id" value="{{post.slug}}" class="btn-like"><i
+                                        class="fas fa-heart"></i></button>
                                 {% else %}
-                                <button type="submit" name="social_apppost_id" value="{{post.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
+                                <button type="submit" name="social_apppost_id" value="{{post.slug}}" class="btn-like"><i
+                                        class="far fa-heart"></i></button>
                                 {% endif %}
                             </form>
                             {% else %}
@@ -91,7 +94,7 @@
                     {% if user.is_authenticated and user.username == comment.name %}
                     <form method="POST" action="/comment/{{comment.id}}">
                         {% csrf_token %}
-                        <input type="hidden" name="post_id" value="{{post.slug}}" />        
+                        <input type="hidden" name="post_id" value="{{post.slug}}" />
                         <div class="form-floating" id="hide-text-area">
                             <textarea name="body" class="form-control">{{comment.body}}</textarea>
                             <button type="submit" class="btn btn-signup btn-sm btn-save">SAVE</button>
@@ -131,5 +134,6 @@
         </div>
     </div>
 </div>
+<!-- JavaScript -->
 <script src="../static/js/scripts.js"></script>
 {% endblock content %}

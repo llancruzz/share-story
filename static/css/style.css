@@ -8,18 +8,20 @@
     box-sizing: border-box;
 }
 
-
+/* HTML */
 html {
     height: 100%;
     min-height: 100%;
 }
 
+/* BODY */
 body {
     background-color: #F9FAFC;
     font-family: 'Jost', sans-serif;
     font-size: larger;
 }
 
+/* PAGE STYLES */
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
@@ -110,10 +112,11 @@ body {
 }
 
 .post-link:hover {
-    color:#23BBBB;
+    color: #23BBBB;
 }
+
 .page-link {
-    color:#F9FAFC;
+    color: #F9FAFC;
     background-color: #23BBBB;
 }
 
@@ -177,7 +180,7 @@ body {
 
 .fonth h1 {
     font-family: 'Amatic SC', cursive;
-    font-size: 2.6em;  
+    font-size: 2.6em;
 }
 
 .share-btn {
@@ -187,7 +190,7 @@ body {
 
 .fonth2 {
     font-family: 'Amatic SC', cursive;
-    font-size: 2.6em; 
+    font-size: 2.6em;
     color: #445261;
 }
 
@@ -200,7 +203,7 @@ body {
 }
 
 .btn-toggler {
-    background-color:#23BBBB;
+    background-color: #23BBBB;
 }
 
 .btn-save {
@@ -208,7 +211,7 @@ body {
     margin-bottom: 0.5em;
 }
 
-#hide-text-area{
+#hide-text-area {
     display: none;
 }
 

@@ -19,12 +19,12 @@ class PostList(generic.ListView):
 
 
 def about(request):
-
+    """ About Page """
     return render(request, 'about.html')
 
 
 def share(request):
-
+    """ Share Story Page """
     return render(request, 'share_story.html')
 
 
@@ -86,7 +86,7 @@ class PostDetail(View):
 
 
 class PostLike(View):
-
+    """ Users can like and unlike posts """
     def post(self, request, slug):
         post = get_object_or_404(Post, slug=slug)
 
@@ -99,7 +99,7 @@ class PostLike(View):
 
 
 class CommentView(View):
-
+    """ Create new text area to update user's comments """
     def post(self, request, id):
         post_slug = request.POST.get("post_id")
         post = get_object_or_404(Post, slug=post_slug)
@@ -113,6 +113,7 @@ class CommentView(View):
 
 
 class DeleteComment(generic.DeleteView):
+    """ Delete user's comments """
     model = Comment
     template_name = 'delete_comment.html'
     success_message = "Comment deleted successfully"
