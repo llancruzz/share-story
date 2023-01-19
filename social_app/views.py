@@ -2,9 +2,10 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.urls import reverse_lazy
 from django.views import generic, View
 from django.http import HttpResponseRedirect
+from django.contrib import messages
 from .models import Post, Comment
 from .forms import CommentForm
-from django.contrib import messages
+
 
 # Create your views here.
 
@@ -105,10 +106,6 @@ class CommentView(View):
 
         return HttpResponseRedirect(reverse('post_detail', args=[post_slug]))
 
-    # def delete(self, request, id):
-        # Add delete functionality
-        # ...
-
 
 class DeleteComment(generic.DeleteView):
     model = Comment
@@ -124,5 +121,5 @@ class DeleteComment(generic.DeleteView):
         return super(DeleteComment, self).delete(request, *args, **kwargs)
 
     def get_success_url(self):
-        recipe = self.object.recipe
+        post = self.object.post
         return reverse_lazy('post_detail', kwargs={'slug': post.slug})
