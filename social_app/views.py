@@ -23,6 +23,11 @@ def about(request):
     return render(request, 'about.html')
 
 
+def share(request):
+
+    return render(request, 'share_story.html')
+
+
 class PostDetail(View):
 
     def get(self, request, slug, *args, **kwargs):
