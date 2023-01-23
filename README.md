@@ -122,6 +122,8 @@ Colours used throughout the site were kept to a minimum to keep its focus clear,
 
 Google fonts were used in this project with both fonts selected for their legibility and simplicity.
 
+- [Jost](https://fonts.google.com/specimen/Jost?query=Jost) -> Use in paragraphs.
+- [Amatic](https://fonts.google.com/specimen/Amatic+SC?query=Amatic) -> Use in headings.
 
 
 #### Images and Iconography
@@ -129,6 +131,8 @@ Google fonts were used in this project with both fonts selected for their legibi
 The icon (as with all others on the site) is from [Font Awesome](https://fontawesome.com/).
 
 The favicon was created from an image found on [favicon](https://favicon.io/) and was used to match the logo icon of the blog.
+
+The logo was created from an free Logo MAker website called [Hatchful](https://www.shopify.com/tools/logo-maker).
 
 #### Database Schema
 
@@ -138,18 +142,58 @@ Two custom models were created based on the initial database schema design as be
 
 
 ## Features
-Content
+### Navigation
+* The main navigation bar was designed from the outset to be kept clean and simple. While links to the site's main functionality are always visible when authenticated, other links were moved to a bootstrap dropdown. The dropdown's main function is to contain links to the home, about us, login and logout links but it also informs the authenticated user which accounts they are currently logged in with. The navigation bar is responsive and will collapse to a 'hamburger' style menu when viewed on devices with smaller viewports. The drop-down will be hidden and the links to other features displayed in a list to prevent the nesting of dropdowns.
+![Navigation Bar](media/navigation-bar.png)
+
+### Home Page
+* The home page includes all posts created by the site administrator. The home page contains photos and links. The site contains pagination with a limit of 3 posts on each page.
+![Home Page](media/home-page.png)
+
+### About Us
+* A brief explanation of what the site is about. Contains information about the page administrator. It also contains a photo based on the site's logo and a registration button.
+![About Us Page](media/about-page.png)
+
+### Share Story
+* The page will show a brief explanation of what is being improved on the site. New future features so that users can interact more with other users and with the admin of the page.
+![Share Story](media/share-page.png)
+
+### Register Account
+* The registration page with information that users must fill in to create a user account.
+![Register Page](media/register-page.png)
+
+### Log In
+* The login page with informed fields that the user must fill in to interact with the site.
+![Log in Page](media/login-page.png)
+
+### Log Out
+* The logout page indicates the user's decision whether they want to continue using the site or leave the site.
+![Log out Page](media/logout-page.png)
+### Leave Comment
+* Os usuários podem fazer comentários nos posts criados.
+![Comment](media/comment.png)
+### Like / Unlike / Update Comment
+* The users can comment, like and update the comment posted by themselves.
+![Features](media/like-update-comment.png)
+
+### Delete Comment
+* Users can delete their posted comments. A confirmation message will be asked before confirming the deletion of the comment.
+![Delete Comment](media/delete-comment.png)
+
+### Footer
+* The lower section of the common footer includes logo links to each of the social media platforms. This provides the user with a visual call to action to prompt them into visiting the social media profiles. These links offer an unintrusive method of promoting the social media channels to the user, providing benefits to the organisation by the way of increased social media following.
+![Footer](media/footer.png)
 
 ### Features Not Implemented
 
-1. Managing Teams and Ticket Categories
+1. Create a Post.
 
-    - Content
+    - As I Site User I want to be able to create and post my story so that I can share them with other users.
 
 ### Future Features
 
-- Knowledge base
-  - Content
+- The users will be able to create posts and send their stories to the admin to be approved and posted by Alan Cruz.
+
 
 ## Technologies Used
 
