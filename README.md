@@ -94,8 +94,7 @@ Pull requests were linked with a user story when they contributed to the complet
 ### Design
 
 #### Wireframes
-
-I created Wireframes to visualize the site's design and act as a template to use when developing the templates. When designing the site I wanted to ensure the site looked and functioned just as well on mobile as larger viewports. Users may use phones as their primary device to raise and view requests and this also offers flexibility to support staff to work from any device.
+Initially, I utilised Balsamiq to produce wireframes to organise the site structure and potential content placement locations. I created Wireframes to visualize the site's design and act as a template to use when developing the templates. When designing the site I wanted to ensure the site looked and functioned just as well on mobile as larger viewports. Users may use phones as their primary device to raise and view requests and this also offers flexibility to support users to enjoy from any device.
 
 - [Wireframe Home Page ](https://github.com/llancruzz/share-story/blob/main/media/home-wireframe.png)
 ![Home Page](media/home-wireframe.png)
@@ -116,11 +115,13 @@ I created Wireframes to visualize the site's design and act as a template to use
 ![Delete. Comment Page](media/delete-wireframe.png)
 
 #### Colour Scheme
-
+Colours used throughout the site were kept to a minimum to keep its focus clear, allow status information to stand out, and present a professional look.
+![Colour Pallet](media/pallet-color.png)
 
 #### Typography
 
 Google fonts were used in this project with both fonts selected for their legibility and simplicity.
+
 
 
 #### Images and Iconography
@@ -161,9 +162,8 @@ Content
 
 ### Python Modules and Packages/Frameworks Used
 
-- Built-in Packages/Modules
-  - [smtplib](https://docs.python.org/3/library/smtplib.html#smtplib.SMTPException) - Used to import SMTPException used when catching errors sending emails.
-  - [datetime](https://docs.python.org/3/library/datetime.html) - Used to get current time in a timezone aware format to use when updating tickets.
+- Built-in Packages/Modules:
+  - [datetime](https://docs.python.org/3/library/datetime.html) - Used to get current time in a timezone aware format to use when updating comments.
   - [os](https://docs.python.org/3/library/os.html) - This module provides a portable way of using operating system dependent functionality.
 
 - External Python Packages
@@ -174,11 +174,9 @@ Content
   - [Django](https://pypi.org/project/Django/3.2.14/) - High-level Python Web framework used to develop the project
   - [django-allauth](https://pypi.org/project/django-allauth/0.51.0/) - Set of Django application used for account registration, management and authentication.
   - [django-crispy-forms](https://pypi.org/project/django-crispy-forms/1.14.0/) - Used to format form elements and layout.
-  - [django-filter](https://pypi.org/project/django-filter/22.1/) - Application that allows dynamic QuerySet filtering from URL parameters.
   - [django-model-utils](https://pypi.org/project/django-model-utils/) - Easily add choices to a django model field.
   - [django-summernote](https://pypi.org/project/django-summernote/0.8.20.0/) - Allows easy use of the Summernote WYSIWYG editor in Django projects.
   - [gunicorn](https://pypi.org/project/gunicorn/20.1.0/) - Python WSGI HTTP Server
-  - [Pillow](https://pypi.org/project/Pillow/9.2.0/) - Fork of PIL, the Python Imaging Library which provides image processing capabilities.
   - [psycopg2](https://pypi.org/project/psycopg2/2.9.3/) - Python PostgreSQL database adapter
 
 ### Programs and Tools Used
