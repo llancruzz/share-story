@@ -12,7 +12,6 @@
 - [User Experience (UX)](#user-experience-ux)
   - [Project Aims](#project-aims)
   - [User Stories](#user-stories)
-    - [Name of user story](#)
   - [Agile Methodology](#agile-methodology)
   - [Design](#design)
     - [Wireframes](#wireframes)
@@ -40,32 +39,55 @@
 ## User Experience (UX)
 
 ### Project Aims
-* 
+* The goals of the project are to share stories and places about travel. It aims to reach users who want to share their feedback and share their stories in the feature future.
 
 ### User Stories
 
-#### Content
+#### View post list
+* As a Site User, I can view a list of posts so that I can select one to read.
 
-User Stories
+#### Open a post
+* As a Site User I can click on a post so that I can read the full text.
 
-#### Content
+#### View Likes
+* As a Site User / Admin I can **view the number of likes on each post so that I can see which is the most popular or viral.
 
-User Stories
+#### View Comments
+* As a Site User / Admin I can view comments on an individual post so that I can read the conversation.
 
-#### Content
+#### Account Registration
+* As a Site User I can register an account so that I can comment and like.
 
-User Stories
+#### Comment on a post
+* As a Site User I can leave comments on a post so that I can be involved in the conversation.
 
-#### Content
+#### Like / Unlike
+* As a Site User I can like or unlike a post so that I can interact with the content.
 
-User Stories
+#### Approve comments
+* As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments.
+
+#### Account Login
+* As a Site User I can login to my account so that I can use the Website using my existing credentials.
+
+#### Account Logout
+* As a Site User I can logout of my account so that I can keep my account secure on shared devices.
+
+#### Edit Comment
+* As a Site User I can edit comments so that I can update my comments.
+
+#### Delete Comment
+* As a Site User, I can delete comments so that I can remove all the information about my comment.
+
+#### Site Pagination
+* As a Site User, I can view a paginated list of posts so that easily select a post to view.
 
 
 ### Agile Methodology
 
 All user stories were entered as issues in a GitHub Kanban project and assigned labels using the MoSCoW prioritization technique. The live project board can be found on the repository's project tab or on the following link:
 
-[User Experience](#).
+[User Experience BOARD](https://github.com/users/llancruzz/projects/8)
 
 Pull requests were linked with a user story when they contributed to the completion of the acceptance criteria.
 
