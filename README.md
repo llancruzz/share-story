@@ -97,11 +97,23 @@ Pull requests were linked with a user story when they contributed to the complet
 
 I created Wireframes to visualize the site's design and act as a template to use when developing the templates. When designing the site I wanted to ensure the site looked and functioned just as well on mobile as larger viewports. Users may use phones as their primary device to raise and view requests and this also offers flexibility to support staff to work from any device.
 
-<details>
-<summary>Home Page Wireframe</summary>
-<br>
-![Home Page](./media/home-wireframe.png)
-</details>
+- [Wireframe Home Page ](https://github.com/llancruzz/share-story/blob/main/media/home-wireframe.png)
+![Home Page](media/home-wireframe.png)
+
+- [Wireframe About Page](https://github.com/llancruzz/share-story/blob/main/media/about-us-wieframe.png)
+![About Page](media/about-us-wieframe.png)
+
+- [Wireframe Share Story Page](https://github.com/llancruzz/share-story/blob/main/media/share-story-wireframe.png)
+![Share Story Page](media/share-story-wireframe.png)
+
+- [Wireframe Register Page](https://github.com/llancruzz/share-story/blob/main/media/register-wireframe.png)
+![Register Page](media/register-wireframe.png)
+
+- [Wireframe Login Page](https://github.com/llancruzz/share-story/blob/main/media/login-wireframe.png)
+![Login Page](media/login-wireframe.png)
+
+- [Wireframe Delete Comment Page](https://github.com/llancruzz/share-story/blob/main/media/delete-wireframe.png)
+![Delete. Comment Page](media/delete-wireframe.png)
 
 #### Colour Scheme
 
