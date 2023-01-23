@@ -199,10 +199,10 @@ Two custom models were created based on the initial database schema design as be
 
 ### Languages Used
 
-- HTML5
-- CSS3
-- Python
-- Javascript
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/CSS#CSS_3)
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Python Modules and Packages/Frameworks Used
 
@@ -226,32 +226,26 @@ Two custom models were created based on the initial database schema design as be
 ### Programs and Tools Used
 
 - [Google Fonts:](https://fonts.google.com/)
-  - Google fonts import statements were used as part of this project to make use
-    of the Poppins and Cabin Round fonts which are used on all pages of the
-    website.
-- [Bootstrap](https://getbootstrap.com/)
+  - Google fonts import statements were used as part of this project to make use of the Amatic and Jost fonts which are used on all pages of the website.
+- [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
   - Bootstrap was used through the project to style the project and create responsive elements/layouts.
 - [drawSQL](https://drawsql.app/) - Create Database Schema/ERD
 - [Git](https://git-scm.com/)
-  - Git was used for version control, using the terminal to commit to Git and
-    Push to GitHub.
-- [GitHub:](https://github.com/)
+  - Git was used for version control, using the terminal to commit to Git and Push to GitHub.
+- [GitHub:](https://github.com/llancruzz)
   - GitHub is used to store the projects code after being pushed from Git.
 - [GIMP:](https://www.gimp.org/)
   - GIMP was used to edit and resize photos for the readme.
 - [Balsamiq:](https://balsamiq.com/)
-  - Balsamiq was used to create the [wireframes](#wireframes) during the design
-    process.
+  - Balsamiq was used to create the [wireframes](#wireframes) during the design process.
 - [Coolors](https://coolors.co/image-recolor)
-  - Coolors Artwork Recolor was used to alter the hero images colours.
-- [TinyJPG](https://tinyjpg.com/)
+  - Coolors Artwork Recolor was used to alter the hero images' colours.
+- [Ezgif](https://ezgif.com/
   - Used to compress images for the README.
-  - [flake8](https://github.com/pycqa/flake8) - Code Linter
-  - [black](https://github.com/psf/black) - Code Formatter
 
 ## Testing
 
-Content
+The website has been tested by friends in different browsers ( Chrome, Firefox, Safari) and on different smartphones, laptops and desktops. I have personally tested the site extensively with development tools to ensure that the site works responsively not only on mobile devices but also on medium to large screens. This website is supports by resolutions Desktop(1600x992px and over), Laptop(1280x802px), Tablet(768x1024px), Mobile(320x480px).
 
 ### Bugs
 
@@ -286,7 +280,6 @@ repository by using the following steps...
 - [Django Documentation](https://docs.djangoproject.com/en/3.2/)
 - [Bootstrap Documentation](https://getbootstrap.com/docs/5.1) and [Examples](https://getbootstrap.com/docs/5.1/examples/)
 - [Django-Summernote Documentation](https://github.com/summernote/django-summernote)
-- [Pillow Documentation](https://pillow.readthedocs.io/en/stable/)
 
 ### Media
 
