@@ -87,6 +87,7 @@ class PostDetail(View):
 
 class PostLike(View):
     """ Users can like and unlike posts """
+
     def post(self, request, slug):
         post = get_object_or_404(Post, slug=slug)
 
@@ -100,6 +101,7 @@ class PostLike(View):
 
 class CommentView(View):
     """ Create new text area to update user's comments """
+
     def post(self, request, id):
         post_slug = request.POST.get("post_id")
         post = get_object_or_404(Post, slug=post_slug)

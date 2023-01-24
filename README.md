@@ -250,6 +250,29 @@ Two custom models were created based on the initial database schema design as be
 
 The website has been tested by friends in different browsers ( Chrome, Firefox, Safari) and on different smartphones, laptops and desktops. I have personally tested the site extensively with development tools to ensure that the site works responsively not only on mobile devices but also on medium to large screens. This website is supports by resolutions Desktop(1600x992px and over), Laptop(1280x802px), Tablet(768x1024px), Mobile(320x480px).
 
+### Python
+
+No validation error reported when using the [PEP8 Online CI](https://pep8ci.herokuapp.com/).
+
+| App/Parent folder | File | Result |
+| - | - | - |
+| ShareStory | [settings.py](#) | PASS |
+| ShareStory | [urls.py](media/urls-ss.png) | PASS |
+| social_app | [admin.py](media/admin.png) | PASS |
+| social_app | [apps.py](media/app.png) | PASS |
+| social_app | [forms.py](media/forms.png) | PASS |
+| social_app | [models.py](media/models.png) | PASS |
+| social_app | [urls.py](media/urls-sa.png) | PASS |
+| social_app | [views.py](media/views.png) | PASS |
+
+### JavaScript
+
+No validation errors reported testing with [JSHint](https://jshint.com).
+
+![Results for JavaScript](media/jhint-ss.png)
+![Results for JavaScript](media/jhint-st.png)
+
+
 ### Bugs
 
 Content
