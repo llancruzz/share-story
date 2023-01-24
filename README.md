@@ -272,6 +272,11 @@ No validation errors reported testing with [JSHint](https://jshint.com).
 ![Results for JavaScript](media/jhint-ss.png)
 ![Results for JavaScript](media/jhint-st.png)
 
+### CSS
+
+No errors were returned when passing through the official (Jigsaw) Validator.
+
+![Results for CSS](media/css-validation.png)
 
 ### Bugs
 
