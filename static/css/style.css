@@ -221,3 +221,9 @@ body {
     font-family: 'Amatic SC';
     font-size: 2.5em;
 }
+
+/* IMAGES */
+
+img {
+    width: 100%;
+}

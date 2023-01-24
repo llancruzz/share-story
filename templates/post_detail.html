@@ -16,10 +16,9 @@
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="https://media.istockphoto.com/id/856682036/photo/share-your-story.jpg?s=612x612&w=0&k=20&c=6Z4qLO41G4OfT8OdR6lsoeUzfA3vweHB-kcGZVkM8Lw="
-                    width="100%">
+                <img src="https://media.istockphoto.com/id/856682036/photo/share-your-story.jpg?s=612x612&w=0&k=20&c=6Z4qLO41G4OfT8OdR6lsoeUzfA3vweHB-kcGZVkM8Lw=" alt="Image of places">
                 {% else %}
-                <img src=" {{ post.featured_image.url }}" width="100%">
+                <img src=" {{ post.featured_image.url }}">
                 {% endif %}
             </div>
         </div>
