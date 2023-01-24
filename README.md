@@ -2,7 +2,7 @@
 ![Screenshot logo](./static/images/share_transp.png)
 
 ## Introduction
- The Share Your Story blog is a website about people's travels among people who want to read about their guides and experiences in so many places. The website is aimed at people who are adventurous and who want to know interesting places. The Share Your Story will be useful as a reference for those who are looking for travel information and also for people who want to share their reviews on posts. 
+ The Share Your Story blog is a website about people's travels among people who want to read about their guides and experiences in so many places. The website is aimed at people who are adventurous and who want to know interesting places. The Share Your Story will be useful as a reference for those who are looking for travel information and also for people who want to share their reviews on posts. This is the 4th portfolio project developed as part of the Code Institute Diploma in Full Stack Development. It was created to demonstrate skills acquired using Django to design and develop websites that offer full CRUD (create, read, update and delete) functionality.
 
 ![Responsive Screenshot](./media/responsive-web.png)
 
@@ -29,8 +29,10 @@
   - [Bugs](#bugs)
     - [Fixed Bugs](#fixed-bugs)
 - [Deployment](#deployment)
-  - [Forking the GitHub Repository](#forking-the-github-repository)
+  - [Create database with EleephantSQL.com](#create-database-with-eleephantsqlcom)
   - [Deploying with Heroku](#deploying-with-heroku)
+  - [Forking the GitHub Repository](#forking-the-github-repository)
+
 - [Credits](#credits)
   - [Online resources](#online-resources)
   - [Media](#media)
@@ -212,7 +214,7 @@ Two custom models were created based on the initial database schema design as be
 
 - External Python Packages
   - [cloudinary](https://pypi.org/project/cloudinary/1.29.0/) - Used for the Ticket Image Model field, Image upload and deletion.
-  - [crispy-bootstrap5](https://pypi.org/project/crispy-bootstrap5/0.6/) - Used to style form using Bootstrap5
+  - [crispy-bootstrap5](https://pypi.org/project/crispy-bootstrap5/0.6/) - Used to style form using Bootstrap5.
   - [dj-database-url](https://pypi.org/project/dj-database-url/0.5.0/) - Allows the use of 'DATABASE_URL' environmental variable in the Django project settings file to connect to a PostgreSQL database.
   - [dj3-cloudinary-storage](https://pypi.org/project/dj3-cloudinary-storage/0.0.6/) - Facilitates integration with Cloudinary by implementing Django Storage API.
   - [Django](https://pypi.org/project/Django/3.2.14/) - High-level Python Web framework used to develop the project
@@ -220,8 +222,9 @@ Two custom models were created based on the initial database schema design as be
   - [django-crispy-forms](https://pypi.org/project/django-crispy-forms/1.14.0/) - Used to format form elements and layout.
   - [django-model-utils](https://pypi.org/project/django-model-utils/) - Easily add choices to a django model field.
   - [django-summernote](https://pypi.org/project/django-summernote/0.8.20.0/) - Allows easy use of the Summernote WYSIWYG editor in Django projects.
-  - [gunicorn](https://pypi.org/project/gunicorn/20.1.0/) - Python WSGI HTTP Server
-  - [psycopg2](https://pypi.org/project/psycopg2/2.9.3/) - Python PostgreSQL database adapter
+  - [gunicorn](https://pypi.org/project/gunicorn/20.1.0/) - Python WSGI HTTP Server.
+  - [psycopg2](https://pypi.org/project/psycopg2/2.9.3/) - Python PostgreSQL database adapter.
+  - [jinja](https://jinja.palletsprojects.com/en/3.1.x/) - Used for templating
 
 ### Programs and Tools Used
 
@@ -240,7 +243,7 @@ Two custom models were created based on the initial database schema design as be
   - Balsamiq was used to create the [wireframes](#wireframes) during the design process.
 - [Coolors](https://coolors.co/image-recolor)
   - Coolors Artwork Recolor was used to alter the hero images' colours.
-- [Ezgif](https://ezgif.com/
+- [Ezgif](https://ezgif.com/)
   - Used to compress images for the README.
 
 ## Testing
@@ -257,21 +260,112 @@ Content
 
 ## Deployment
 
+### Create database with EleephantSQL.com
+The site is deployed using [ElephantSQL.com](https://www.elephantsql.com) database and to deploy the site using [Heroku](https://id.heroku.com/login).
+
+Create an Account on ElephantSQL:
+
+1. Navigate to ElephantSQL.com and click “Get a managed database today”.
+2. Select “Try now for FREE” in the TINY TURTLE database plan.
+3. Select “Log in with GitHub” and authorize ElephantSQL with your selected GitHub account.
+4. In the Create new team form:
+    * Add a team name (your own name is fine).
+    * Read and agree to the Terms of Service.
+    * Select Yes for GDPR.
+    * Provide your email address.
+    * Click “Create Team”.
+5. Your account is successfully created.
+
+Create a database:
+
+1. Click “Create New Instance”.
+2. Set up your plan:
+    * Give your plan a Name (this is commonly the name of the project).
+    * Select the Tiny Turtle (Free) plan.
+    * You can leave the Tags field blank.
+3. Select “Select Region”.
+4. Select a data center near you.
+5. Then click “Review”.
+6. Check your details are correct and then click “Create instance”.
+7. Return to the ElephantSQL dashboard and click on the database instance name for this project.
+8. In the URL section, clicking the copy icon will copy the database URL to your clipboard.
+
+Preparing your code for Deployment:
+
+1. Before we can build our application on Heroku, we need to create a few files that Heroku will need to run our application:
+    * A requirements.txt file which contains a list of the Python dependencies that our project needs in order to run successfully.
+    * A Procfile which contains the start command to run the project.
+2. Generate the requirements.txt file with the following command in the terminal. After you run this command a new file called requirements.txt should appear in your root directory.
+    ```
+    pip3 freeze --local > requirements.txt
+    ```
+3. Heroku requires a Procfile containing a command to run your program. Inside the root directory of your project create the new file. It must be called Procfile with a capital P, otherwise Heroku won’t recognise it.
+4. Inside the file, add the following command.
+    ```
+    web: gunicorn ShareStory.wsgi
+    ```
+
+Connecting the database to the hosting platform:
+
+Now that you have your database and code in Gitpod configured, we will add it to a Heroku app using a new environment variable (Config Var) called DATABASE_URL. Then our Heroku app will be able to connect to the external database.
+
+1. Log into Heroku.com and click “New” and then “Create a new app.
+2. Choose a unique name for your app, select the region closest to you and click “Create app”.
+3. Go to the Settings tab of your new app.
+4. Click Reveal Config Vars.
+5. Return to your ElephantSQL tab and copy your database URL.
+6. Back on Heroku, add a Config Var called DATABASE_URL and paste your ElephantSQL database URL in as the value. Make sure you click “Add”.
+7. Add each of your other environment variables from the env.py file as a Config Var. The result should look something like this:
+    ![Config Vars](media/heroku-config.png)
+
+### Deploying with Heroku
+
+Deploying the app on [Heroku](https://id.heroku.com/login):
+
+1. Navigate to the “Deploy” tab of your app
+2. In the Deployment method section, select “Connect to GitHub”.
+3. Search for your repo and click Connect.
+4. Optional: You can click Enable Automatic Deploys in case you make any further changes to the project. This will trigger any time code is pushed to your GitHub repository.
+5. As we already have all our changes pushed to GitHub, we will use the Manual deploy section and click Deploy Branch. This will start the build process.
+6. The app should be up and running now, so click the “Open app” button:
+     * Your deployed app will load.
+     * Test that you can create an account, log in and log out.
+     * Test that you can Comment, Read, Update and Delete for this application.
+
 ### Forking the GitHub Repository
 
 By forking the GitHub Repository we make a copy of the original repository on
 our GitHub account to view and/or make changes without affecting the original
 repository by using the following steps...
 
-1. Log in to GitHub and locate the [GitHub
-   Repository](#)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/llancruzz/share-story)
 1. At the top of the Repository (not top of page) just above the "Settings"
    Button on the menu, locate the "Fork" Button.
 1. Click the button (not the number to the right) and you should now have a copy
    of the original repository in your GitHub account.
 
+### How to Clone this Project
 
-### Deploying with Heroku
+To clone the repository:
+
+1. Log in (or sign up) to [GitHub](https://github.com/).
+2. Go to the repository for this project [share-story](https://github.com/llancruzz/share-story).
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+6. Press Enter. Your local clone will be created.
+7. [Click here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) for a more detailed explanation of the process above with pictures.
+
+8. Change the current working directory to the cloned project folder (this will be a child directory in the location you cloned the project).
+
+9. It is recommended to use a virtual environment during development ([learn more about virtual environments](https://realpython.com/python-virtual-environments-a-primer/)). If you would prefer not to use on please skip the following steps:
+    1. Create a virtual environment in the projects working directory by entering the following command in the same terminal window used for the steps above `python3 -m venv .venv`.
+    2. Before use, the virtual environment will need to be activated using the command `source .venv/bin/activate` in the same terminal window used previously.
+10. Packages required by the project can now using the command `pip install -r requirements.txt`
+11. In the cloned directory, rename the file `.env-example` to `.env` and populate it with the information required.
+12. Make Django migrations using the command `./manage.py makemigrations`.
+13. Make Django migrate using the command `./manage.py migrate`.
+
 
 ## Credits
 
@@ -287,5 +381,4 @@ Content
 
 ### Acknowledgments
 
-Content
 
