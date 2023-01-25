@@ -18,7 +18,7 @@
     - [Typography](#typography)
     - [Database Schema](#database-schema)
 - [Features](#features)
-  - [Features Not Implemented](#features-not-implemented)
+  - [Common Features](#common-features)
   - [Future Features](#future-features)
 - [Technologies Used](#technologies-used)
   - [Languages Used](#languages-used)
@@ -155,6 +155,9 @@ Using your defined models (one example below), create an ERD with the relationsh
 
 
 ## Features
+
+## Common Features
+
 ### Navigation
 * The main navigation bar was designed from the outset to be kept clean and simple. While links to the site's main functionality are always visible when authenticated, other links were moved to a bootstrap dropdown. The dropdown's main function is to contain links to the home, about us, login and logout links but it also informs the authenticated user which accounts they are currently logged in with. The navigation bar is responsive and will collapse to a 'hamburger' style menu when viewed on devices with smaller viewports. The drop-down will be hidden and the links to other features displayed in a list to prevent the nesting of dropdowns.
 ![Navigation Bar](media/navigation-bar.png)
@@ -197,15 +200,11 @@ Using your defined models (one example below), create an ERD with the relationsh
 * The lower section of the common footer includes logo links to each of the social media platforms. This provides the user with a visual call to action to prompt them into visiting the social media profiles. These links offer an unintrusive method of promoting the social media channels to the user, providing benefits to the organisation by the way of increased social media following.
 ![Footer](media/footer.png)
 
-### Features Not Implemented
-
-1. Create a Post.
-
-    - As I Site User I want to be able to create and post my story so that I can share them with other users.
-
 ### Future Features
 
-- The users will be able to create posts and send their stories to the admin to be approved and posted by Alan Cruz.
+1. Create a Post.
+  - The users will be able to create posts and send their stories to the admin to be approved and posted by Alan Cruz.
+  - As I Site User I want to be able to create and post my story so that I can share them with other users.
 
 
 ## Technologies Used
