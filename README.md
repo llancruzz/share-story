@@ -266,7 +266,7 @@ No validation error reported when using the [PEP8 Online CI](https://pep8ci.hero
 
 | App/Parent folder | File | Result |
 | - | - | - |
-| ShareStory | [settings.py](#) | PASS |
+| ShareStory | [settings.py](media/settings.png) | PASS |
 | ShareStory | [urls.py](media/urls-ss.png) | PASS |
 | social_app | [admin.py](media/admin.png) | PASS |
 | social_app | [apps.py](media/app.png) | PASS |
