@@ -18,7 +18,7 @@
                 {% if "placeholder" in post.featured_image.url %}
                 <img src="https://media.istockphoto.com/id/856682036/photo/share-your-story.jpg?s=612x612&w=0&k=20&c=6Z4qLO41G4OfT8OdR6lsoeUzfA3vweHB-kcGZVkM8Lw=" alt="Image of places">
                 {% else %}
-                <img src=" {{ post.featured_image.url }}">
+                <img src=" {{ post.featured_image.url }}" alt="image of places">
                 {% endif %}
             </div>
         </div>
@@ -27,7 +27,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col card mb-4  mt-3 left  top">
+        <div class="col card mb-4  mt-3 left top">
             <div class="card-body">
                 <!-- The post content goes inside the card-text. -->
                 <!-- Use the | safe filter inside the template tags -->
@@ -60,7 +60,8 @@
                         {% with comments.count as total_comments %}
                         <strong class="text-secondary"><i class="far fa-comments"></i>
                             <!-- Our total_comments variable goes before the closing strong tag -->
-                            {{ total_comments }}</strong>
+                            {{ total_comments }}
+                        </strong>
                         {% endwith %}
                     </div>
                 </div>
@@ -73,7 +74,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-8 card mb-4  mt-3 ">
+        <div class="col-md-8 card mb-4 mt-3 ">
             <h3>Comments:</h3>
             <div class="card-body">
                 <!-- We want a for loop inside the empty control tags to iterate through each comment in comments -->
@@ -110,7 +111,7 @@
                 {% endfor %}
             </div>
         </div>
-        <div class="col-md-4 card mb-4  mt-3 ">
+        <div class="col-md-4 card mb-4 mt-3 ">
             <div class="card-body">
                 <!-- Approved comments -->
                 {% if commented %}
