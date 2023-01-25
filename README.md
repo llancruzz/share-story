@@ -30,7 +30,7 @@
   - [CSS](#css)
   - [HTML](#HTML)
   - [Lighthouse](#lighthouse)
-  - [Manual Testing](#)
+  - [Manual Testing](#manual-testing)
   - [Bugs](#bugs)
     - [Fixed Bugs](#fixed-bugs)
 - [Deployment](#deployment)

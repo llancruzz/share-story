@@ -1,5 +1,5 @@
 # Testing Instructions
-
+![Manual Testing](media/testing.png)
 ## Table of Contents
 
 - [Navigation](#navigation)
