@@ -72,6 +72,7 @@ body {
     text-transform: uppercase;
 }
 
+/* MASTHEAD STYLES */
 .masthead {
     margin-top: 10px;
     overflow: hidden;
@@ -106,6 +107,7 @@ body {
     z-index: 100;
 }
 
+/* POST DETAILS STYLES */
 .post-link {
     text-decoration: none;
     color: #445261;
@@ -222,7 +224,7 @@ body {
     font-size: 2.5em;
 }
 
-/* IMAGES */
+/* ALL IMAGES */
 
 img {
     width: 100%;
