@@ -9,24 +9,29 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 
 class Post(models.Model):
-    """ Schema for the Post model """
+    """Schema for the Post model"""
+
     title = models.CharField(
-        max_length=200, unique=True, null=False, blank=False)
-    slug = models.SlugField(max_length=200, unique=True,
-                            null=False, blank=False)
+        max_length=200, unique=True, null=False, blank=False
+    )
+    slug = models.SlugField(
+        max_length=200, unique=True, null=False, blank=False
+    )
     author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="social_posts")
+        User, on_delete=models.CASCADE, related_name="social_posts"
+    )
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField(null=False, blank=False)
-    featured_image = CloudinaryField('image', default='placeholder')
+    featured_image = CloudinaryField("image", default="placeholder")
     excerpt = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=1)
     likes = models.ManyToManyField(
-        User, related_name='social_likes', blank=True)
+        User, related_name="social_likes", blank=True
+    )
 
     class Meta:
-        ordering = ['-created_on']
+        ordering = ["-created_on"]
 
     def __str__(self):
         return self.title
@@ -36,9 +41,11 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
-    """ Schema for the Comment model """
+    """Schema for the Comment model"""
+
     post = models.ForeignKey(
-        Post, on_delete=models.CASCADE, related_name="comments")
+        Post, on_delete=models.CASCADE, related_name="comments"
+    )
     name = models.CharField(max_length=80)
     email = models.EmailField()
     body = models.TextField()
@@ -46,7 +53,7 @@ class Comment(models.Model):
     approved = models.BooleanField(default=False)
 
     class Met:
-        ordering = ['created-on']
+        ordering = ["created-on"]
 
     def __str__(self):
         return f"Comment {self.body} by {self.name}"

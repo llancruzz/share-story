@@ -94,15 +94,16 @@
                     <form method="POST" action="/comment/{{comment.id}}">
                         {% csrf_token %}
                         <input type="hidden" name="post_id" value="{{post.slug}}" />
-                        <div class="form-floating" id="hide-text-area">
+                        <div class="form-floating hide-text-area">
                             <textarea name="body" class="form-control">{{comment.body}}</textarea>
                             <button type="submit" class="btn btn-signup btn-sm btn-save">SAVE</button>
                         </div>
+                        <button type="button" class="btn btn-warning btn-lg edit-comment">Edit</button>
+                        <a href="{% url 'delete_comment' comment.id %}">
+                            <button type="button" class="btn btn-danger btn-lg">Delete</button>
+                        </a>
                     </form>
-                    <button id="edit-comment-button" type="button" class="btn btn-warning btn-lg">Edit</button>
-                    <a href="{% url 'delete_comment' comment.id %}">
-                        <button type="submit" class="btn btn-danger btn-lg">Delete</button>
-                    </a>
+                    
                     {% endif %}
                 </div>
                 <!-- Our for loop ends here -->
@@ -114,7 +115,7 @@
                 <!-- Approved comments -->
                 {% if commented %}
 
-                <div class="alert alert-success" id="msg" role="alert">
+                <div class="alert alert-success" role="alert">
                     Your comment is awaiting approval
                 </div>
                 {% else %}
