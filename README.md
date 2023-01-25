@@ -30,6 +30,7 @@
   - [CSS](#css)
   - [HTML](#HTML)
   - [Lighthouse](#lighthouse)
+  - [Manual Testing](#)
   - [Bugs](#bugs)
     - [Fixed Bugs](#fixed-bugs)
 - [Deployment](#deployment)
@@ -300,6 +301,10 @@ Content
 
   * Desktop
   ![Lighthouse Desktop](media/lighthouse-desktop.png)
+
+### Manual Testing
+* For extensive instructions on how to manually test this site and it's user stories, please refer to these testing instructions:
+   * A separate testing document has been created as [TESTING.md](TESTING.md)
 
 ### Bugs
 
