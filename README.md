@@ -29,6 +29,8 @@
   - [Python](#python)
   - [JavaScript](#javascript)
   - [CSS](#css)
+  - [HTML](#HTML)
+  - [Lighthouse]
   - [Bugs](#bugs)
     - [Fixed Bugs](#fixed-bugs)
 - [Deployment](#deployment)
@@ -280,6 +282,19 @@ No validation errors reported testing with [JSHint](https://jshint.com).
 No errors were returned when passing through the official (Jigsaw) Validator.
 
 ![Results for CSS](media/css-validation.png)
+
+### HTML
+
+Content
+
+### Lighthouse
+* I generated a lighthouse report for the deployed site through the Google Chrome Dev Tools. I generated both a desktop and mobile report.
+
+  * Mobile
+  ![Lighthouse Mobile](media/lighthouse-mobile.png)
+
+  * Desktop
+  ![Lighthouse Desktop](media/lighthouse-desktop.png)
 
 ### Bugs
 
