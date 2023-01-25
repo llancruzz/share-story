@@ -2,12 +2,11 @@
 ![Screenshot logo](./static/images/share_transp.png)
 
 ## Introduction
- The Share Your Story blog is a website about people's travels among people who want to read about their guides and experiences in so many places. The website is aimed at people who are adventurous and who want to know interesting places. The Share Your Story will be useful as a reference for those who are looking for travel information and also for people who want to share their reviews on posts. This is the 4th portfolio project developed as part of the Code Institute Diploma in Full Stack Development. It was created to demonstrate skills acquired using Django to design and develop websites that offer full CRUD (create, read, update and delete) functionality.
+ The Share Your Story blog is a website for people who want to read about guides and experiences in so many places about others people. The website is aimed at people who are adventurous and who want to know interesting places. The Share Your Story will be useful as a reference for those who are looking for travel information and also for people who want to share their reviews on posts. This is the 4th portfolio project developed as part of the Code Institute Diploma in Full Stack Development. It was created to demonstrate skills acquired using Django to design and develop websites that offer full CRUD (create, read, update and delete) functionality.
 
 ![Responsive Screenshot](./media/responsive-web.png)
 
-[View the live Website on Github Pages](https://sharestories.herokuapp.com/) Please note: To open any links in this document in a new browser tab, please press CTRL + Click.
-
+[View the live Website](https://sharestories.herokuapp.com/).
 ## Table Of Contents:
 - [User Experience (UX)](#user-experience-ux)
   - [Project Aims](#project-aims)
@@ -30,7 +29,7 @@
   - [JavaScript](#javascript)
   - [CSS](#css)
   - [HTML](#HTML)
-  - [Lighthouse]
+  - [Lighthouse](#lighthouse)
   - [Bugs](#bugs)
     - [Fixed Bugs](#fixed-bugs)
 - [Deployment](#deployment)
@@ -46,7 +45,7 @@
 ## User Experience (UX)
 
 ### Project Aims
-* The goals of the project are to share stories and places about travel. It aims to reach users who want to share their feedback and share their stories in the feature future.
+* The project aims to share stories and places about travel and experiences. The goal is to reach users who want to share their feedback and share their stories in a new feature that will be rolled out soon.
 
 ### User Stories
 
@@ -145,7 +144,13 @@ The logo was created from an free Logo MAker website called [Hatchful](https://w
 
 Two custom models were created based on the initial database schema design as below. The CustomUser model was created first as this extended the AbstractUser class to allow roles to be added. The Post and Comment models were then created in turn as required by the user stories.
 
-![Image of Database Schema](#)
+Django Projects:
+
+Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models. Understanding the relationships between different tables can save time later in the project.
+
+Using your defined models (one example below), create an ERD with the relationships identified.
+
+![Image of Database Schema](media/diagram-erp.png)
 
 
 ## Features
