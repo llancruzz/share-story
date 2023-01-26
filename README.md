@@ -290,7 +290,44 @@ No errors were returned when passing through the official (Jigsaw) Validator.
 
 ### HTML
 
-Content
+No errors were returned when passing through the official (Jigsaw) Validator.
+
+- Home 
+  * No errors or warnings to show.
+
+![Home validation](media/home-validation.png)
+
+- About
+  * No errors or warnings to show.
+
+![About validation](media/about-validation.png)
+
+- Sign Up
+  * No errors or warnings to show.
+
+![Sign Up validation](media/signup-validation.png)
+
+- Log In
+  * No errors or warnings to show.
+
+![Log In validation](media/login-validation.png)
+
+
+- Log Out 
+  * No errors or warnings to show.
+
+![Log Out validation](media/logout-validation.png)
+
+- Share Story
+  * No errors or warnings to show.
+
+![Share Story validation](media/share-validation.png)
+
+- Delete
+  * No errors or warnings to show.
+
+![Share Story validation](media/delete-validation.png)
+
 
 ### Lighthouse
 * I generated a lighthouse report for the deployed site through the Google Chrome Dev Tools. I generated both a desktop and mobile report.
@@ -442,3 +479,4 @@ To clone the repository:
 - To my mentor for all his guidance, support, tips, and feedback.
 - The Code Institute community on slack.
 
+Return to [Table Of Content](#table-of-contents)
