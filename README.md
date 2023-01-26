@@ -472,6 +472,7 @@ To clone the repository:
 - [Bootstrap Documentation](https://getbootstrap.com/docs/5.1) and [Examples](https://getbootstrap.com/docs/5.1/examples/)
 - [Django-Summernote Documentation](https://github.com/summernote/django-summernote)
 - [Code Institute](https://codeinstitute.net/ie/full-stack-software-development-diploma/)
+    * Django blog module provided by the Code Institute.
 
 ### Media
 
