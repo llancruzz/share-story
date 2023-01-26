@@ -202,10 +202,9 @@ Using your defined models (one example below), create an ERD with the relationsh
 
 ### Future Features
 
-1. Create a Post.
-  - The users will be able to create posts and send their stories to the admin to be approved and posted by Alan Cruz.
-  - As I Site User I want to be able to create and post my story so that I can share them with other users.
-
+1. Create a new User Story.
+  - The users will be able to create posts and send their experiences to the admin to be approved and posted by Alan Cruz.
+      * As I Site User I want to be able to create and post my story so that I can share them with other users.
 
 ## Technologies Used
 
@@ -328,6 +327,8 @@ No errors were returned when passing through the official (Jigsaw) Validator.
 
 ![Share Story validation](media/delete-validation.png)
 
+Note: All individual pages of posts have been checked.
+  * No errors or warnings to show.
 
 ### Lighthouse
 * I generated a lighthouse report for the deployed site through the Google Chrome Dev Tools. I generated both a desktop and mobile report.
@@ -343,12 +344,16 @@ No errors were returned when passing through the official (Jigsaw) Validator.
    * A separate testing document has been created as [TESTING.md](TESTING.md)
 
 ### Bugs
+* All detected bugs have been fixed.
 
-Content
+1. While doing the manual tests, I noticed that the home button didn't have the hover effect like the other navigation buttons.
+2. When doing the HTML validation tests, I noticed that there was a tag error in one of the texts caused by the summernote library.
+  * ![Error Summernote](media/error-summernote.png)
 
 #### Fixed Bugs
 
-Content
+1. Home button link: To fix, I had to remove "active" in its class.
+2. Error in summernote: To fix this, I had to remove this paragraph tag in the admin panel. I reviewed all the code on the body content summernote.
 
 ## Deployment
 
