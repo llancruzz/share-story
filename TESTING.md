@@ -121,4 +121,4 @@ Links to social media sites located in footer (available to all users).
 | Link Icons in Footer | 1 | Click on any of the social media icons | New tab opens with respective social media site | PASS |
 
 
-Return to [README.md](README.md)
+Return to [README.md](README.md) :book:
