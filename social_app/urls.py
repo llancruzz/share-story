@@ -13,7 +13,11 @@ urlpatterns = [
         views.DeleteComment.as_view(),
         name="delete_comment",
     ),
-    path("profile_edit/", views.ProfileEditView.as_view(), name="profile_edit"),
+    path(
+        "profile_edit/", views.ProfileEditView.as_view(), name="profile_edit"),
+    path(
+        "password_edit/", views.PasswordEditView.as_view(),
+        name="password_edit"),
     path("<slug:slug>/", views.PostDetail.as_view(), name="post_detail"),
 
 ]

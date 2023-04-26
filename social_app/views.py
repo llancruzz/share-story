@@ -4,9 +4,9 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from .models import Post, Comment
-from .forms import CommentForm, ProfileEditForm
-from django.contrib.auth.forms import UserChangeForm
-from django.views.generic.edit import FormView
+from .forms import CommentForm, ProfileEditForm, PasswordEditForm
+from django.contrib.auth.views import PasswordChangeView
+from django.contrib.auth.forms import UserChangeForm, PasswordChangeForm
 
 
 # Create your views here.
@@ -138,20 +138,18 @@ class DeleteComment(generic.DeleteView):
         return reverse_lazy("post_detail", kwargs={"slug": post.slug})
 
 
-# class ProfileEditView(generic.UpdateView):
-#     form_class = ProfileEditForm
-#     template_name = "profile_edit.html"
-
-#     success_url = reverse_lazy('home')
-
-#     def get_object(self):
-#         return self.request.user
-
-
-class ProfileEditView(FormView):
-    template_name = 'profile_edit.html'
+class ProfileEditView(generic.UpdateView):
     form_class = ProfileEditForm
+    template_name = "profile_edit.html"
+
     success_url = reverse_lazy('home')
 
-    def form_valid(self, form):
-        return super().form_valid(form)
+    def get_object(self):
+        return self.request.user
+
+
+class PasswordEditView(PasswordChangeView):
+    model = Post
+    template_name = 'password_edit.html'
+    form_class = PasswordEditForm
+    success_url = reverse_lazy('home')

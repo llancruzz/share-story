@@ -14,6 +14,7 @@ class ProfileEditForm(UserChangeForm):
     first_name = forms.CharField(max_length=100)
     last_name = forms.CharField(max_length=100)
     email = forms.CharField(max_length=100)
+    password = None
 
     class Meta:
         model = User
@@ -29,8 +30,8 @@ class ProfileEditForm(UserChangeForm):
 
 
 class PasswordEditForm(PasswordChangeForm):
-    previous_password = forms.CharField(
-        max_length=100, label="Previous Password", widget=forms.PasswordInput())
+    old_password = forms.CharField(
+        max_length=100, label="Old Password", widget=forms.PasswordInput())
     new_password1 = forms.CharField(
         max_length=100, label="New Password", widget=forms.PasswordInput())
     new_password2 = forms.CharField(
