@@ -57,3 +57,12 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
+
+
+class Profile(models.Model):
+    """Schema for the Comment model"""
+    user = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
+    bio = models.TextField(max_length=300, blank=True)
+
+    def __str__(self):
+        return str(self.user)
