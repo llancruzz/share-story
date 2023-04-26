@@ -40,3 +40,20 @@ class PasswordEditForm(PasswordChangeForm):
     class Meta:
         model = User
         fields = ["previous_password", "new_password1", "new_password2"]
+
+
+class ContactForm(forms.ModelForm):
+    name = forms.CharField(max_length=60)
+    email = forms.EmailField()
+    message = forms.CharField(
+        max_length=2500, widget=forms.Textarea(),
+        help_text="Share here your story!")
+    source = forms.CharField(max_length=60, widget=forms.HiddenInput())
+
+    def clean(self):
+        cleaned_data = super(ContactForm, self).clean()
+        name = cleaned_data.get("name")
+        email = cleaned_data.get("email")
+        message = cleaned_data.get("message")
+        if not name and email and not message:
+            raise forms.ValidationError("You have to write something")
