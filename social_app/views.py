@@ -4,7 +4,7 @@ from django.urls import reverse_lazy
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.contrib import messages
-from .models import Post, Comment
+from .models import Post, Comment, Contact
 from .forms import CommentForm, ProfileEditForm, PasswordEditForm
 from django.contrib.auth.views import PasswordChangeView
 from django.contrib.auth.forms import UserChangeForm, PasswordChangeForm
@@ -156,4 +156,12 @@ class PasswordEditView(PasswordChangeView):
     model = Post
     template_name = 'password_edit.html'
     form_class = PasswordEditForm
+    success_url = reverse_lazy('home')
+
+
+class ContactView(generic.CreateView):
+    """ Contact Create story """
+    model = Contact
+    fields = ("name", "email", "story_title", "story",)
+    template_name = "contact.html"
     success_url = reverse_lazy('home')

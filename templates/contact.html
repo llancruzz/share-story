@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <h1>Share your Story</h1>
+        <hr class="mt-0 mb-4">
+            <form action="" method="post" class="row g-3"> 
+                {% csrf_token %}  
+                    <div class="col-md-6">
+                        {{ form.name | as_crispy_field }}
+                    </div>
+                    <div class="col-md-6">
+                        {{ form.email | as_crispy_field }}
+                    </div>  
+                </div>
+                {{ form.story_title | as_crispy_field }}
+                {{ form.story | as_crispy_field }}
+                <button class="btn btn-signup mt-3" type="submit">SHARE YOUR STORY</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -169,3 +169,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # TODO: Replace with actual email backend later.
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

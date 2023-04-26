@@ -18,6 +18,7 @@ urlpatterns = [
     path(
         "password_edit/", views.PasswordEditView.as_view(),
         name="password_edit"),
+    path("contact/", views.ContactView.as_view(), name="contact"),
     path("<slug:slug>/", views.PostDetail.as_view(), name="post_detail"),
 
 ]
