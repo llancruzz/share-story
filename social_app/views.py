@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, reverse
+from django.contrib.auth.decorators import login_required
 from django.urls import reverse_lazy
 from django.views import generic, View
 from django.http import HttpResponseRedirect
@@ -25,6 +26,7 @@ def about(request):
     return render(request, "about.html")
 
 
+@login_required
 def share(request):
     """Share Story Page"""
     return render(request, "share_story.html")
@@ -139,6 +141,7 @@ class DeleteComment(generic.DeleteView):
 
 
 class ProfileEditView(generic.UpdateView):
+    """ Edit profile credentials """
     form_class = ProfileEditForm
     template_name = "profile_edit.html"
 
@@ -149,6 +152,7 @@ class ProfileEditView(generic.UpdateView):
 
 
 class PasswordEditView(PasswordChangeView):
+    """ Edit password credentials """
     model = Post
     template_name = 'password_edit.html'
     form_class = PasswordEditForm
