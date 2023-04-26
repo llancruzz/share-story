@@ -26,3 +26,4 @@ class CommentAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Profile)
+admin.site.register(Contact)
