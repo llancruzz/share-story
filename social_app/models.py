@@ -60,7 +60,7 @@ class Comment(models.Model):
 
 
 class Profile(models.Model):
-    """Schema for the Comment model"""
+    """Schema for the Profile model"""
     user = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
     bio = models.TextField(max_length=300, blank=True)
 

@@ -14,11 +14,10 @@ class ProfileEditForm(UserChangeForm):
     first_name = forms.CharField(max_length=100)
     last_name = forms.CharField(max_length=100)
     email = forms.CharField(max_length=100)
-    password = None
 
     class Meta:
         model = User
-        fields = ["username",  "first_name", "last_name", "email"]
+        fields = ["username", "first_name", "last_name", "email"]
         widgets = {
             "username": forms.TextInput(attrs={"class": "form-control"}),
             "first_name": forms.TextInput(attrs={"class": "form-control"}),
