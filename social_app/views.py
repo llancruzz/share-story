@@ -1,9 +1,9 @@
+from django.contrib import messages
 from django.shortcuts import render, get_object_or_404, reverse
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse_lazy
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from django.contrib import messages
 from .models import Post, Comment, ShareUserStory
 from .forms import CommentForm, ProfileEditForm, PasswordEditForm
 from django.contrib.auth.views import PasswordChangeView
@@ -134,12 +134,12 @@ class DeleteComment(LoginRequiredMixin, generic.DeleteView):
         comment = self.get_object()
         return comment.name == self.request.user.username
 
-    def delete(self, request, pk):
-        comment = get_object_or_404(Comment, pk)
+    def delete(self, request, *args, **kwargs):
+        comment = get_object_or_404(Comment, pk=kwargs['pk'])
         if request.user.email != comment.email:
             # return 404
-            message.error(self.request, "Comment not found.")
-            return
+            messages.error(self.request, "Comment not found.")
+            return super(DeleteComment, self).delete(request, *args, **kwargs)
 
         messages.success(self.request, self.success_message)
         return super(DeleteComment, self).delete(request, *args, **kwargs)
@@ -149,7 +149,7 @@ class DeleteComment(LoginRequiredMixin, generic.DeleteView):
         return reverse_lazy("post_detail", kwargs={"slug": post.slug})
 
 
-class ProfileEditView(generic.UpdateView):
+class ProfileEditView(LoginRequiredMixin, generic.UpdateView):
     """ Edit profile credentials """
     form_class = ProfileEditForm
     template_name = "profile_edit.html"
