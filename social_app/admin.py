@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, Comment, Profile, Contact
+from .models import Post, Comment, ShareUserStory
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -25,5 +25,4 @@ class CommentAdmin(admin.ModelAdmin):
         queryset.update(approved=True)
 
 
-admin.site.register(Profile)
-admin.site.register(Contact)
+admin.site.register(ShareUserStory)

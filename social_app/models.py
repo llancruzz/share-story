@@ -59,16 +59,7 @@ class Comment(models.Model):
         return f"Comment {self.body} by {self.name}"
 
 
-class Profile(models.Model):
-    """Schema for the Profile model"""
-    user = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
-    bio = models.TextField(max_length=300, blank=True)
-
-    def __str__(self):
-        return str(self.user)
-
-
-class Contact(models.Model):
+class ShareUserStory(models.Model):
     """Schema for the Contact model"""
     name = models.CharField(max_length=60)
     email = models.EmailField(blank=True)

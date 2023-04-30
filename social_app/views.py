@@ -4,10 +4,12 @@ from django.urls import reverse_lazy
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.contrib import messages
-from .models import Post, Comment, Contact
+from .models import Post, Comment, ShareUserStory
 from .forms import CommentForm, ProfileEditForm, PasswordEditForm
 from django.contrib.auth.views import PasswordChangeView
 from django.contrib.auth.forms import UserChangeForm, PasswordChangeForm
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.utils.decorators import method_decorator
 
 
 # Create your views here.
@@ -26,7 +28,7 @@ def about(request):
     return render(request, "about.html")
 
 
-@login_required
+@login_required()
 def share(request):
     """Share Story Page"""
     return render(request, "share_story.html")
@@ -61,6 +63,7 @@ class PostDetail(View):
             },
         )
 
+    @method_decorator(login_required)
     def post(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
@@ -91,7 +94,7 @@ class PostDetail(View):
         )
 
 
-class PostLike(View):
+class PostLike(LoginRequiredMixin, View):
     """Users can like and unlike posts"""
 
     def post(self, request, slug):
@@ -105,7 +108,7 @@ class PostLike(View):
         return HttpResponseRedirect(reverse("post_detail", args=[slug]))
 
 
-class CommentView(View):
+class CommentView(LoginRequiredMixin, View):
     """Create new text area to update user's comments"""
 
     def post(self, request, id):
@@ -120,7 +123,7 @@ class CommentView(View):
         return HttpResponseRedirect(reverse("post_detail", args=[post_slug]))
 
 
-class DeleteComment(generic.DeleteView):
+class DeleteComment(LoginRequiredMixin, generic.DeleteView):
     """Delete user's comments"""
 
     model = Comment
@@ -131,7 +134,13 @@ class DeleteComment(generic.DeleteView):
         comment = self.get_object()
         return comment.name == self.request.user.username
 
-    def delete(self, request, *args, **kwargs):
+    def delete(self, request, pk):
+        comment = get_object_or_404(Comment, pk)
+        if request.user.email != comment.email:
+            # return 404
+            message.error(self.request, "Comment not found.")
+            return
+
         messages.success(self.request, self.success_message)
         return super(DeleteComment, self).delete(request, *args, **kwargs)
 
@@ -151,17 +160,16 @@ class ProfileEditView(generic.UpdateView):
         return self.request.user
 
 
-class PasswordEditView(PasswordChangeView):
+class PasswordEditView(LoginRequiredMixin, PasswordChangeView):
     """ Edit password credentials """
-    model = Post
     template_name = 'password_edit.html'
     form_class = PasswordEditForm
     success_url = reverse_lazy('home')
 
 
-class ContactView(generic.CreateView):
+class ContactView(LoginRequiredMixin, generic.CreateView):
     """ Contact Create story """
-    model = Contact
+    model = ShareUserStory
     fields = ("name", "email", "story_title", "story",)
     template_name = "contact.html"
     success_url = reverse_lazy('home')
