@@ -30,6 +30,7 @@ All navigation links, including home icon, can be found in navbar or on small to
 | "Sign Up" Link | 3 | While not authenticated, click "Sign Up".| User is directed to Sign Up form. | PASS |
 | "Logout" Link | 4 | While authenticated, click "Logout". | User is directed to page with Sign Out button. | PASS |
 | "About Us" Link | 5 | Click "About Us" | An informative page will be displayed so that the user understands the purpose of the website | PASS |
+| "Username" link | 6 | Click on "username loggin profile" button. | User is redirect to edit profile form | PASS |
 | "Share Story" Btn-Link | 6 | Click "Share Your Story" | An informative page will be displayed to the user, informing new features and functionalities. | PASS |
 
 ### CRUD
@@ -39,15 +40,18 @@ The full CRUD functionality is only available to authenticated users.
 #### Create
 
 Write and submit a comment on Leave Comment to submit the comment (authenticated users only).
+To share your story, you will need to fill out and submit a form (authenticated users only).
 
 | Testing | Test # | Steps | Expected Outcome | Results |
 | - | - | - | - | - |
 | Comment field | 1 | Select the empty field and start typing. | Written text displays.| PASS |
 | Submit | 2 | After completing Comment form, click submit button. | Alert message informs user of successful submission. The user is directed to the posting page with a newly sent alert message to be approved. | PASS |
+| Share Story form | 3 | Click the share button | Fill out the requirements on form | PASS |
+| Submit | 4 | After completing Share Story Form, click share story buton. | Message informs user of successful submission | PASS |
 
 #### Read
 
-Read submitted haikus, including tanka extensions (available to all users).
+Read submitted posts, including tanka extensions (available to all users).
 
 | Testing | Test # | Steps | Expected Outcome | Results |
 | - | - | - | - | - |
@@ -56,16 +60,18 @@ Read submitted haikus, including tanka extensions (available to all users).
 
 #### Update
 
-Option to edit existing comments (authenticated users only).
+Option to edit existing comments, profile and credentials (authenticated users only).
 
 | Testing | Test # | Steps | Expected Outcome | Results |
 | - | - | - | - | - |
 | Edit-Btn | 1 | Click the edit button below the comment body. The button is only visible after login and after the comment has been approved by the admin. | A new text field with a save button will appear. | PASS |
 | Save-Btn | 2 | Once you have changed the comment, click on the save button. | After saving the new comment, the message will be changed after admin approval. A message waiting for comment approval would be displayed. | PASS |
+| Username - Btn | Change the username, firstname, lastname and email | Click the confirm button | A new profile will be changed with its new credentials | PASS |
+| Change Password-Btn | Click the change password button. | Fill the old password, the new password and confirm the new password | A new credentials will be changed with its new crendentials. | PASS |
 
 #### Delete
 
-Option to delete existing haikus via haiku detail view (authenticated users only).
+Option to delete existing comments via post detail view (authenticated users only).
 
 | Testing | Test # | Steps | Expected Outcome | Results |
 | - | - | - | - | - |
@@ -105,7 +111,7 @@ Allows user to sign out of existing account (authenticated users only).
 
 ### Likes
 
-Option to like/unlike haikus (authenticated users only).
+Option to like/unlike posts (authenticated users only).
 
 | Testing | Test # | Steps | Expected Outcome | Results |
 | - | - | - | - | - |
