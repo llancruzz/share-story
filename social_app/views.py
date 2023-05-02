@@ -164,7 +164,12 @@ class PasswordEditView(LoginRequiredMixin, PasswordChangeView):
     """ Edit password credentials """
     template_name = 'password_edit.html'
     form_class = PasswordEditForm
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('password_changed_success')
+
+
+@login_required()
+def password_changed_success(request):
+    return render(request, "password_changed_success.html", {})
 
 
 class ContactView(LoginRequiredMixin, generic.CreateView):
@@ -172,4 +177,9 @@ class ContactView(LoginRequiredMixin, generic.CreateView):
     model = ShareUserStory
     fields = ("name", "email", "story_title", "story",)
     template_name = "contact.html"
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('story_submitted_success')
+
+
+@login_required()
+def story_submitted_success(request):
+    return render(request, "story_submitted_success.html", {})
