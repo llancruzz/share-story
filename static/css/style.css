@@ -233,3 +233,21 @@ body {
 img {
   width: 100%;
 }
+
+/* ALL FORMS */
+
+.form-auth {
+  width: 319px;
+  margin: 0 auto;
+  background-color: #fcfcfc;
+  padding: 0px 30px 10px;
+  box-shadow: 1px 4px 10px 1px #aaa;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.edit-text,
+.post-subtitle {
+  margin-top: 0%;
+  margin-left: 0%;
+}
