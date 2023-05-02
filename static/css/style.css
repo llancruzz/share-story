@@ -1,231 +1,235 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Jost&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Jost&display=swap");
 
 /* General rule sizes here */
 * {
-    margin: 0;
-    padding: 0;
-    border: none;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
 }
 
 /* HTML */
 html {
-    height: 100%;
-    min-height: 100%;
+  height: 100%;
+  min-height: 100%;
 }
 
 /* BODY */
 body {
-    background-color: #F9FAFC;
-    font-family: 'Jost', sans-serif;
-    font-size: larger;
+  background-color: #f9fafc;
+  font-family: "Jost", sans-serif;
+  font-size: larger;
 }
 
 /* PAGE STYLES */
 .brand {
-    font-family: Lato, sans-serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #4A4A4F;
+  font-family: Lato, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #4a4a4f;
 }
 
 .red-o {
-    color: #E84610;
+  color: #e84610;
 }
 
 .thin {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .light-bg {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .dark-bg {
-    background-color: #445261;
+  background-color: #445261;
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+  background-color: #f9fafc;
 }
 
 .card {
-    border: none;
-    background-color: transparent;
+  border: none;
+  background-color: transparent;
 }
 
 .image-container {
-    position: relative;
+  position: relative;
 }
 
 .image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #23BBBB;
+  position: absolute;
+  bottom: 5%;
+  min-width: 30%;
+  left: -2px;
+  background-color: #23bbbb;
 }
 
 .author {
-    color: white;
-    margin: 4px;
-    text-transform: uppercase;
+  color: white;
+  margin: 4px;
+  text-transform: uppercase;
 }
 
 /* MASTHEAD STYLES */
 .masthead {
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    height: 33vh;
-    width: 100%;
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  height: 33vh;
+  width: 100%;
 }
 
 .masthead-text {
-    background-color: #445261;
-    color: white;
-    position: relative;
+  background-color: #445261;
+  color: white;
+  position: relative;
 }
 
 .masthead-image {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .masthead-image:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 90%;
-    height: 100%;
-    width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
-    z-index: 100;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 90%;
+  height: 100%;
+  width: 150%;
+  background: #445261;
+  -webkit-transform: skew(15deg);
+  -moz-transform: skew(15deg);
+  transform: skew(15deg);
+  z-index: 100;
 }
 
 /* POST DETAILS STYLES */
 .post-link {
-    text-decoration: none;
-    color: #445261;
+  text-decoration: none;
+  color: #445261;
 }
 
 .post-link:hover {
-    color: #23BBBB;
+  color: #23bbbb;
 }
 
 .page-link {
-    color: #F9FAFC;
-    background-color: #23BBBB;
+  color: #f9fafc;
+  background-color: #23bbbb;
 }
 
 .post-title {
-    margin-top: 20%;
-    margin-left: 5%;
+  margin-top: 20%;
+  margin-left: 5%;
 }
 
 .post-subtitle {
-    margin-left: 5%;
-    color: lightgray;
+  margin-left: 5%;
+  color: lightgray;
 }
 
 .btn-signup {
-    background-color: #23BBBB;
-    color: #fff;
+  background-color: #23bbbb;
+  color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
-    background-color: #fff;
-    color: #23BBBB;
+  background-color: #fff;
+  color: #23bbbb;
 }
 
-
 .color-link a {
-    color: #23BBBB;
+  color: #23bbbb;
 }
 
 .navbar-nav .nav-link.active {
-    color: #23BBBB;
+  color: #23bbbb;
 }
 
 .link {
-    color: #23BBBB;
-    text-decoration: none;
+  color: #23bbbb;
+  text-decoration: none;
 }
 
 .link:hover,
 .link:active {
-    color: #445261;
-    text-decoration: underline;
+  color: #445261;
+  text-decoration: underline;
 }
 
 .btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
+  color: #e84610;
+  border: none;
+  background: transparent;
 }
 
 .btn-like:hover,
 .btn-like:active {
-    color: #E84610;
-    background: transparent;
-    border: none;
+  color: #e84610;
+  background: transparent;
+  border: none;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background: #23bbbb;
 }
 
 .navbar {
-    background-color: #445261;
+  background-color: #445261;
 }
 
 .fonth h1 {
-    font-family: 'Amatic SC', cursive;
-    font-size: 2.6em;
+  font-family: "Amatic SC", cursive;
+  font-size: 2.6em;
 }
 
 .share-btn {
-    background-color: #23BBBB;
-    border-color: #23BBBB;
+  background-color: #23bbbb;
+  border-color: #23bbbb;
 }
 
 .fonth2 {
-    font-family: 'Amatic SC', cursive;
-    font-size: 2.6em;
-    color: #445261;
+  font-family: "Amatic SC", cursive;
+  font-size: 2.6em;
+  color: #445261;
 }
 
 .jumbotron {
-    background-color: #445261;
+  background-color: #445261;
 }
 
 .aboutp {
-    text-align: justify;
+  text-align: justify;
 }
 
 .btn-toggler {
-    background-color: #23BBBB;
+  background-color: #23bbbb;
 }
 
 .btn-save {
-    margin-top: 0.2em;
-    margin-bottom: 0.5em;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
 }
 
 .hide-text-area {
-    display: none;
+  display: none;
 }
 
 .text-delete {
-    text-align: center;
-    margin-top: 2em;
-    font-family: 'Amatic SC';
-    font-size: 2.5em;
+  text-align: center;
+  margin-top: 2em;
+  font-family: "Amatic SC";
+  font-size: 2.5em;
 }
 
 /* ALL IMAGES */
 
 img {
-    width: 100%;
+  width: 100%;
 }
