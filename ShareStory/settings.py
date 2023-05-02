@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 
 DEBUG = os.environ.get("DEBUG", False)
 # DEBUG = "DEVELOPMENT" in os.environ
-# DEBUG = True
+# DEBUG = True 
 
 X_FRAME_OPTIONS = "SAMEORIGIN"
 
