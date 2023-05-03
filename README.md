@@ -110,43 +110,71 @@ Pull requests were linked with a user story when they contributed to the complet
 Initially, I utilised Balsamiq to produce wireframes to organise the site structure and potential content placement locations. I created Wireframes to visualize the site's design and act as a template to use when developing the templates. When designing the site I wanted to ensure the site looked and functioned just as well on mobile as larger viewports. Users may use phones as their primary device to raise and view requests and this also offers flexibility to support users to enjoy from any device.
 
 - [Wireframe Home Page ](https://github.com/llancruzz/share-story/blob/main/media/home-wireframe.png)
-![Home Page](media/home-wireframe.png)
+  <details><summary>OPEN</summary>
+  ![Home Page](media/home-wireframe.png)
+  </details>
+
 
 - [Wireframe About Page](https://github.com/llancruzz/share-story/blob/main/media/about-us-wireframe.png)
-![About Page](media/about-us-wireframe.png)
+  <details><summary>OPEN</summary>
+  ![About Page](media/about-us-wireframe.png)
+  </details>
+
 
 - [Wireframe Share Story Page](https://github.com/llancruzz/share-story/blob/main/media/share-story-wireframe.png)
-![Share Story Page](media/share-story-wireframe.png)
+  <details><summary>OPEN</summary>
+  ![Share Story Page](media/share-story-wireframe.png)
+  </details>
 
 - [Wireframe Register Page](https://github.com/llancruzz/share-story/blob/main/media/register-wireframe.png)
-![Register Page](media/register-wireframe.png)
+  <details><summary>OPEN</summary>
+  ![Register Page](media/register-wireframe.png)
+  </details>
 
 - [Wireframe Login Page](https://github.com/llancruzz/share-story/blob/main/media/login-wireframe.png)
-![Login Page](media/login-wireframe.png)
+  <details><summary>OPEN</summary>
+  ![Login Page](media/login-wireframe.png)
+  </details>
 
 - [Wireframe Delete Comment Page](https://github.com/llancruzz/share-story/blob/main/media/delete-wireframe.png)
-![Delete Comment Page](media/delete-wireframe.png)
+  <details><summary>OPEN</summary>
+  ![Delete Comment Page](media/delete-wireframe.png)
+  </details>
 
 - [Wireframe Logout Page](https://github.com/llancruzz/share-story/blob/main/media/logout-wireframe.png)
-![Logout page](media/logout-wireframe.png)
+  <details><summary>OPEN</summary>
+  ![Logout page](media/logout-wireframe.png)
+  </details>
 
 - [Wireframe Share Form](https://github.com/llancruzz/share-story/blob/main/media/share-form-wireframe.png)
-![Share form page](media/share-form-wireframe.png)
+  <details><summary>OPEN</summary>
+  ![Share form page](media/share-form-wireframe.png)
+  </details>
 
 - [Wireframe Story Shared Confirmation](https://github.com/llancruzz/share-story/blob/main/media/share-form-submitted-wireframe.png)
-![Share story confirmation page](media/share-form-submitted-wireframe.png)
+  <details><summary>OPEN</summary>
+  ![Share story confirmation page](media/share-form-submitted-wireframe.png)
+  </details>
 
 - [Wireframe Edit Profile](https://github.com/llancruzz/share-story/blob/main/media/edit-profile-wireframe.png)
-![Edit profile page](media/edit-profile-wireframe.png)
+  <details><summary>OPEN</summary>
+  ![Edit profile page](media/edit-profile-wireframe.png)
+  </details>
 
 - [Wireframe Edit Password](https://github.com/llancruzz/share-story/blob/main/media/password-edit-wireframe.png)
-![Edit password page](media/password-edit-wireframe.png)
+  <details><summary></summary>
+  ![Edit password page](media/password-edit-wireframe.png)
+  </details>
 
 - [Wirefame Password Updated Confirmation](https://github.com/llancruzz/share-story/blob/main/media/password-updated-wireframe.png)
-![Password updated page](media/password-updated-wireframe.png)
+  <details><summary>OPEN</summary>
+  ![Password updated page](media/password-updated-wireframe.png)
+  </details>
 
 - [Wireframe Post Page](https://github.com/llancruzz/share-story/blob/main/media/post-page-wireframe.png)
-![Post page](media/post-page-wireframe.png)
+  <details><summary>OPEN</summary>
+  ![Post page](media/post-page-wireframe.png)
+  </details>
 
 #### Colour Scheme
 Colours used throughout the site were kept to a minimum to keep its focus clear, allow status information to stand out, and present a professional look.
@@ -375,6 +403,32 @@ No errors were returned when passing through the official (Jigsaw) Validator.
   * No errors or warnings to show.
 
 ![Share Story validation](media/delete-validation.png)
+
+- Contact Share Form
+  * No errors or warnings to show.
+
+![Contact Share Form](media/contact-validation.png)
+
+- Story Submitted Success
+  * No errors or warnings to show.
+
+![Story Submitted success](media/story_submitted_success-validation.png)
+
+- Edit Profile
+  * No errors or warnings to show.
+
+![Edit Profile](media/profile_edit-validation.png)
+
+- Edit Password
+  * No errors or warnings to show.
+
+![Password Edit](media/password_edit-validation.png)
+
+- Password Updated Success
+  * No errors or warnings to show.
+
+![Password Updated success](media/password_changed_success-validation.png)
+
 
 Note: All individual pages of posts have been checked.
   * No errors or warnings to show.
