@@ -99,68 +99,92 @@ Initially, I utilised Balsamiq to produce wireframes to organise the site struct
 
 - [Wireframe Home Page ](https://github.com/llancruzz/share-story/blob/main/media/home-wireframe.png)
   <details><summary>OPEN</summary>
+  Home Page:
+
   ![Home Page](media/home-wireframe.png)
   </details>
 
-
 - [Wireframe About Page](https://github.com/llancruzz/share-story/blob/main/media/about-us-wireframe.png)
   <details><summary>OPEN</summary>
+  About Us Page:
+
   ![About Page](media/about-us-wireframe.png)
   </details>
 
-
 - [Wireframe Share Story Page](https://github.com/llancruzz/share-story/blob/main/media/share-story-wireframe.png)
   <details><summary>OPEN</summary>
+  Share Story Page:
+
   ![Share Story Page](media/share-story-wireframe.png)
   </details>
 
 - [Wireframe Register Page](https://github.com/llancruzz/share-story/blob/main/media/register-wireframe.png)
   <details><summary>OPEN</summary>
+  Register Page:
+
   ![Register Page](media/register-wireframe.png)
   </details>
 
 - [Wireframe Login Page](https://github.com/llancruzz/share-story/blob/main/media/login-wireframe.png)
   <details><summary>OPEN</summary>
+  Login Page:
+
   ![Login Page](media/login-wireframe.png)
   </details>
 
 - [Wireframe Delete Comment Page](https://github.com/llancruzz/share-story/blob/main/media/delete-wireframe.png)
   <details><summary>OPEN</summary>
+  Comment Page:
+
   ![Delete Comment Page](media/delete-wireframe.png)
   </details>
 
 - [Wireframe Logout Page](https://github.com/llancruzz/share-story/blob/main/media/logout-wireframe.png)
   <details><summary>OPEN</summary>
+  Logout Page: 
+
   ![Logout page](media/logout-wireframe.png)
   </details>
 
-- [Wireframe Share Form](https://github.com/llancruzz/share-story/blob/main/media/share-form-wireframe.png)
+- [Wireframe Share Story Form](https://github.com/llancruzz/share-story/blob/main/media/share-form-wireframe.png)
   <details><summary>OPEN</summary>
+  Share Story Form Page:
+
   ![Share form page](media/share-form-wireframe.png)
   </details>
 
 - [Wireframe Story Shared Confirmation](https://github.com/llancruzz/share-story/blob/main/media/share-form-submitted-wireframe.png)
   <details><summary>OPEN</summary>
+  Story Shared Confirmation Page:
+
   ![Share story confirmation page](media/share-form-submitted-wireframe.png)
   </details>
 
 - [Wireframe Edit Profile](https://github.com/llancruzz/share-story/blob/main/media/edit-profile-wireframe.png)
   <details><summary>OPEN</summary>
+  Edit Profile Page:
+
   ![Edit profile page](media/edit-profile-wireframe.png)
   </details>
 
 - [Wireframe Edit Password](https://github.com/llancruzz/share-story/blob/main/media/password-edit-wireframe.png)
-  <details><summary></summary>
+  <details><summary>OPEN</summary>
+  Edit Password Page:
+
   ![Edit password page](media/password-edit-wireframe.png)
   </details>
 
 - [Wirefame Password Updated Confirmation](https://github.com/llancruzz/share-story/blob/main/media/password-updated-wireframe.png)
   <details><summary>OPEN</summary>
+  Password Updated Page:
+
   ![Password updated page](media/password-updated-wireframe.png)
   </details>
 
 - [Wireframe Post Page](https://github.com/llancruzz/share-story/blob/main/media/post-page-wireframe.png)
   <details><summary>OPEN</summary>
+  Post Page:
+
   ![Post page](media/post-page-wireframe.png)
   </details>
 
