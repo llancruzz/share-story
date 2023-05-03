@@ -112,8 +112,8 @@ Initially, I utilised Balsamiq to produce wireframes to organise the site struct
 - [Wireframe Home Page ](https://github.com/llancruzz/share-story/blob/main/media/home-wireframe.png)
 ![Home Page](media/home-wireframe.png)
 
-- [Wireframe About Page](https://github.com/llancruzz/share-story/blob/main/media/about-us-wieframe.png)
-![About Page](media/about-us-wieframe.png)
+- [Wireframe About Page](https://github.com/llancruzz/share-story/blob/main/media/about-us-wireframe.png)
+![About Page](media/about-us-wireframe.png)
 
 - [Wireframe Share Story Page](https://github.com/llancruzz/share-story/blob/main/media/share-story-wireframe.png)
 ![Share Story Page](media/share-story-wireframe.png)
@@ -127,25 +127,25 @@ Initially, I utilised Balsamiq to produce wireframes to organise the site struct
 - [Wireframe Delete Comment Page](https://github.com/llancruzz/share-story/blob/main/media/delete-wireframe.png)
 ![Delete Comment Page](media/delete-wireframe.png)
 
-- [Wireframe Logout Page](#)
+- [Wireframe Logout Page](https://github.com/llancruzz/share-story/blob/main/media/logout-wireframe.png)
 ![Logout page](media/logout-wireframe.png)
 
-- [Wireframe Share Form](#)
+- [Wireframe Share Form](https://github.com/llancruzz/share-story/blob/main/media/share-form-wireframe.png)
 ![Share form page](media/share-form-wireframe.png)
 
-- [Wireframe Story Shared Confirmation](#)
+- [Wireframe Story Shared Confirmation](https://github.com/llancruzz/share-story/blob/main/media/share-form-submitted-wireframe.png)
 ![Share story confirmation page](media/share-form-submitted-wireframe.png)
 
-- [Wireframe Edit Profile](#)
+- [Wireframe Edit Profile](https://github.com/llancruzz/share-story/blob/main/media/edit-profile-wireframe.png)
 ![Edit profile page](media/edit-profile-wireframe.png)
 
-- [Wireframe Edit Password](#)
+- [Wireframe Edit Password](https://github.com/llancruzz/share-story/blob/main/media/password-edit-wireframe.png)
 ![Edit password page](media/password-edit-wireframe.png)
 
-- [Wirefame Password Updated Confirmation](#)
+- [Wirefame Password Updated Confirmation](https://github.com/llancruzz/share-story/blob/main/media/password-updated-wireframe.png)
 ![Password updated page](media/password-updated-wireframe.png)
 
-- [Wireframe Post Page](#)
+- [Wireframe Post Page](https://github.com/llancruzz/share-story/blob/main/media/post-page-wireframe.png)
 ![Post page](media/post-page-wireframe.png)
 
 #### Colour Scheme
