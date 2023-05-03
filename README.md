@@ -57,7 +57,7 @@
 * As a Site User I can click on a post so that I can read the full text.
 
 #### View Likes
-* As a Site User / Admin I can **view the number of likes on each post so that I can see which is the most popular or viral.
+* As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular or viral.
 
 #### View Comments
 * As a Site User / Admin I can view comments on an individual post so that I can read the conversation.
@@ -82,6 +82,12 @@
 
 #### Edit Comment
 * As a Site User I can edit comments so that I can update my comments.
+
+#### Edit Profile
+* As a user, I want to be able to modify my profile information, such as my username and credentials, so that I have greater control over my personal information and a more customized user experience.
+
+#### Contact Us
+* As a user, I can share my stories through a contact form so that the blog owner can see them and create a post based on my experience as related in the form.
 
 #### Delete Comment
 * As a Site User, I can delete comments so that I can remove all the information about my comment.
@@ -119,7 +125,28 @@ Initially, I utilised Balsamiq to produce wireframes to organise the site struct
 ![Login Page](media/login-wireframe.png)
 
 - [Wireframe Delete Comment Page](https://github.com/llancruzz/share-story/blob/main/media/delete-wireframe.png)
-![Delete. Comment Page](media/delete-wireframe.png)
+![Delete Comment Page](media/delete-wireframe.png)
+
+- [Wireframe Logout Page](#)
+![Logout page](media/logout-wireframe.png)
+
+- [Wireframe Share Form](#)
+![Share form page](media/share-form-wireframe.png)
+
+- [Wireframe Story Shared Confirmation](#)
+![Share story confirmation page](media/share-form-submitted-wireframe.png)
+
+- [Wireframe Edit Profile](#)
+![Edit profile page](media/edit-profile-wireframe.png)
+
+- [Wireframe Edit Password](#)
+![Edit password page](media/password-edit-wireframe.png)
+
+- [Wirefame Password Updated Confirmation](#)
+![Password updated page](media/password-updated-wireframe.png)
+
+- [Wireframe Post Page](#)
+![Post page](media/post-page-wireframe.png)
 
 #### Colour Scheme
 Colours used throughout the site were kept to a minimum to keep its focus clear, allow status information to stand out, and present a professional look.
@@ -174,6 +201,26 @@ Using your defined models (one example below), create an ERD with the relationsh
 * The page will show a brief explanation of what is being improved on the site. New future features so that users can interact more with other users and with the admin of the page.
 ![Share Story](media/share-page.png)
 
+### Share User Story Form
+* The share user story form page with information that users must fill in to share a story.
+![Share Form Page](media/story-form.png)
+
+### Message Story Shared Confirmation
+* The confirmation page for sharing a story will display a message confirming the submission to the user, along with any additional information required if the user wants to add a new story.
+![Share ConfirmationPage](media/story-shared.png)
+
+### Edit Profile
+* The edit profile feature allows the user to change their username, first name, last name, and email.
+![Edit profile](media/edit-profile.png)
+
+### Edit Password
+* The edit password feature allows the user to update their credentials, such as the old password, new password, and confirm password.
+![Edit password](media/password-edit.png)
+
+### Message Passwod Updated Confirmation
+* After updating their password, the user will be shown a confirmation page displaying a message confirming the successful update of their credentials.
+![Password updated](media/password-updated.png)
+
 ### Register Account
 * The registration page with information that users must fill in to create a user account.
 ![Register Page](media/register-page.png)
@@ -185,9 +232,11 @@ Using your defined models (one example below), create an ERD with the relationsh
 ### Log Out
 * The logout page indicates the user's decision whether they want to continue using the site or leave the site.
 ![Log out Page](media/logout-page.png)
+
 ### Leave Comment
-* Os usuários podem fazer comentários nos posts criados.
+* Users can make comments on created posts.
 ![Comment](media/comment.png)
+
 ### Like / Unlike / Update Comment
 * The users can comment, like and update the comment posted by themselves.
 ![Features](media/like-update-comment.png)
@@ -203,7 +252,7 @@ Using your defined models (one example below), create an ERD with the relationsh
 ### Future Features
 
 1. Create a new User Story.
-  - The users will be able to create posts and send their experiences to the admin to be approved and posted by Alan Cruz.
+  - The users will be able to create posts and add their experiences without being approved by the owner of the Blog.
       * As I Site User I want to be able to create and post my story so that I can share them with other users.
 
 ## Technologies Used
