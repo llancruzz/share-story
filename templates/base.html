@@ -174,9 +174,13 @@
     <script>
       setTimeout(function () {
         let messages = document.getElementById("msg");
-        let alert = new bootstrap.Alert(messages);
-        alert.close();
-      }, 2000);
+        if (messages) {
+          let alert = new bootstrap.Alert(messages);
+          if (alert && alert.close) {
+            alert.close();
+          }
+        }
+      }, 2600);
     </script>
   </body>
 </html>
