@@ -28,7 +28,7 @@
   - [Python](#python)
   - [JavaScript](#javascript)
   - [CSS](#css)
-  - [HTML](#HTML)
+  - [HTML](#html)
   - [Lighthouse](#lighthouse)
   - [Manual Testing](#manual-testing)
   - [Bugs](#bugs)
@@ -49,52 +49,40 @@
 * The project aims to share stories and places about travel and experiences. The goal is to reach users who want to share their feedback and share their stories in a new feature that will be rolled out soon.
 
 ### User Stories
+* Acceptance criteria for each user story can be viewed within the linked GitHub issue.
 
-#### View post list
-* As a Site User, I can view a list of posts so that I can select one to read.
+#### Epic: Authentication
 
-#### Open a post
-* As a Site User I can click on a post so that I can read the full text.
+User Stories
 
-#### View Likes
-* As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular or viral.
+1. As a Site User I can register an account so that I can comment and like. [#5](https://github.com/llancruzz/share-story/issues/5)
+2. As a Site User I can login to my account so that I can use the Website using my existing credentials.[#12](https://github.com/llancruzz/share-story/issues/12)
+3. As a Site User I can logout of my account so that I can keep my account secure on shared devices.[#13](https://github.com/llancruzz/share-story/issues/13)
 
-#### View Comments
-* As a Site User / Admin I can view comments on an individual post so that I can read the conversation.
+#### Epic: Account Management
 
-#### Account Registration
-* As a Site User I can register an account so that I can comment and like.
+User Stories
 
-#### Comment on a post
-* As a Site User I can leave comments on a post so that I can be involved in the conversation.
+1. As a user, I want to be able to modify my profile information, such as my username and credentials, so that I have greater control over my personal information and a more customized user experience.[#25](https://github.com/llancruzz/share-story/issues/25)
 
-#### Like / Unlike
-* As a Site User I can like or unlike a post so that I can interact with the content.
+#### Epic: Post Management
 
-#### Approve comments
-* As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments.
+User Stories
 
-#### Account Login
-* As a Site User I can login to my account so that I can use the Website using my existing credentials.
-
-#### Account Logout
-* As a Site User I can logout of my account so that I can keep my account secure on shared devices.
-
-#### Edit Comment
-* As a Site User I can edit comments so that I can update my comments.
-
-#### Edit Profile
-* As a user, I want to be able to modify my profile information, such as my username and credentials, so that I have greater control over my personal information and a more customized user experience.
-
-#### Contact Us
-* As a user, I can share my stories through a contact form so that the blog owner can see them and create a post based on my experience as related in the form.
-
-#### Delete Comment
-* As a Site User, I can delete comments so that I can remove all the information about my comment.
-
-#### Site Pagination
-* As a Site User, I can view a paginated list of posts so that easily select a post to view.
-
+1. As a Site User, I can view a list of posts so that I can select one to read.[#1](https://github.com/llancruzz/share-story/issues/1)
+2. As a Site User I can click on a post so that I can read the full text.[#2](https://github.com/llancruzz/share-story/issues/2)
+3. As a Site User / Admin I can view the number of likes on each post so that I can see which is the most popular or viral.[#3](https://github.com/llancruzz/share-story/issues/3)
+4. As a Site User / Admin I can view comments on an individual post so that I can read the conversation.[#4](https://github.com/llancruzz/share-story/issues/4)
+5. As a Site User I can leave comments on a post so that I can be involved in the conversation.[#6](https://github.com/llancruzz/share-story/issues/6)
+6. As a Site User I can like or unlike a post so that I can interact with the content.[#7](https://github.com/llancruzz/share-story/issues/7)
+7. As a Site Admin I can approve or disapprove comments so that I can filter out objectionable comments.[#10](https://github.com/llancruzz/share-story/issues/10)
+8. As a Site User I can edit comments so that I can update my comments.[#15](https://github.com/llancruzz/share-story/issues/15)
+9. As a user, I can share my stories through a contact form so that the blog owner can see them and create a post based on my experience as related in the form.[#24](https://github.com/llancruzz/share-story/issues/24)
+10. As a Site User, I can delete comments so that I can remove all the information about my comment.[#16](https://github.com/llancruzz/share-story/issues/16)
+11. As a Site User, I can view a paginated list of posts so that easily select a post to view.[#23](https://github.com/llancruzz/share-story/issues/23)
+12. As a Site Admin, I can create a post so that I can share my story and moments with other users.[#14](https://github.com/llancruzz/share-story/issues/14)
+13. As a Site Admin I can create, read, update and delete posts so that I can manage my post's content.[#8](https://github.com/llancruzz/share-story/issues/8)
+14. As a Site Admin I can create draft posts so that I can finish writing the content later.[#9](https://github.com/llancruzz/share-story/issues/9)
 
 ### Agile Methodology
 
