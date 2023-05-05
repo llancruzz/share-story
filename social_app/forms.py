@@ -42,7 +42,7 @@ class PasswordEditForm(PasswordChangeForm):
         fields = ["previous_password", "new_password1", "new_password2"]
 
 
-class ContactForm(forms.ModelForm):
+class ShareStoryForm(forms.ModelForm):
     name = forms.CharField(max_length=60)
     email = forms.EmailField()
     message = forms.CharField(

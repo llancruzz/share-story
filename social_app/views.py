@@ -172,7 +172,7 @@ def password_changed_success(request):
     return render(request, "password_changed_success.html", {})
 
 
-class ContactView(LoginRequiredMixin, generic.CreateView):
+class ShareStoryView(LoginRequiredMixin, generic.CreateView):
     """ Contact Create story """
     model = ShareUserStory
     fields = ("name", "email", "story_title", "story",)

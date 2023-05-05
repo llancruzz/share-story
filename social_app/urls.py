@@ -22,7 +22,7 @@ urlpatterns = [
          name='password_changed_success'),
     path('story_submitted_success', views.story_submitted_success,
          name='story_submitted_success'),
-    path("contact/", views.ContactView.as_view(), name="contact"),
+    path("contact/", views.ShareStoryView.as_view(), name="contact"),
     path("<slug:slug>/", views.PostDetail.as_view(), name="post_detail"),
 
 ]
